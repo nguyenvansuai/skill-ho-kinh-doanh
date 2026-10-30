@@ -1,6 +1,6 @@
 # Skill AI cho Hộ kinh doanh (Việt Nam 2026)
 
-Bộ skill giúp Claude (và ChatGPT) hỗ trợ **chủ hộ kinh doanh, tiểu thương** làm việc sổ sách và thuế **theo quy định năm 2026**: ghi sổ doanh thu S1a/S2a-HKD theo Thông tư 152/2025/TT-BTC, đối soát sao kê với doanh thu sàn, so mốc **1 tỷ đồng** (Nghị định 141/2026/NĐ-CP), hỏi đáp thuế có dẫn nguồn văn bản, kiểm tra hóa đơn điện tử, hướng dẫn khai báo thuế trên eTax Mobile.
+Bộ **12 skill** giúp Claude (và ChatGPT) hỗ trợ **chủ hộ kinh doanh, cá nhân kinh doanh, người cho thuê nhà** làm sổ sách và thuế **theo quy định năm 2026**: ghi sổ S1a/S2a-HKD (Thông tư 152/2025/TT-BTC), đối soát sao kê, so mốc **1 tỷ đồng** (Nghị định 141/2026/NĐ-CP), tính thuế và so 2 cách tính TNCN, lịch hạn nộp đưa vào Google Calendar, khai báo trên eTax Mobile, hóa đơn điện tử (Nghị định 254/2026), đăng ký – tạm ngừng – đóng hộ, thuế cho thuê nhà, xử lý chậm nộp và phạt, lương – bảo hiểm – thuế TNCN của nhân viên.
 
 Mọi skill tuân theo cùng nguyên tắc: **không bịa, không đoán số** (chữ mờ thì đánh dấu `[?]`), tính toán bằng code, viện dẫn pháp luật luôn kèm số hiệu văn bản và lưu ý kiểm tra văn bản hiện hành, **không tự khai, nộp, ký thay**.
 
@@ -25,6 +25,13 @@ Trên điện thoại: bấm vào tên file → nút **Download** (biểu tượ
 | 03 | Hỏi đáp thuế | `/hoi-dap-thue-hkd` | Trả lời có dẫn nguồn; đọc thông báo thuế; soạn câu hỏi cho cán bộ thuế; checklist theo quý |
 | 04 | Kiểm tra hóa đơn | `/kiem-tra-hoa-don` | Kiểm tra trước khi xuất hóa đơn; bảng chi phí từ hóa đơn mua vào; ngưỡng hóa đơn điện tử |
 | 05 | Khai báo thuế | `/khai-bao-thue-hkd` | Đúng trường hợp → mẫu, hạn nộp, ô cần điền; các bước trên eTax Mobile và Cổng dịch vụ công, **kiểm tra lại giao diện mới nhất** trước khi hướng dẫn |
+| 06 | Tính thuế | `/tinh-thue-hkd` | Thuế GTGT, TNCN theo ngành, theo quý; so cách tính % doanh thu với 15% thu nhập, chi phí hòa vốn; trừ 1 tỷ có lợi nhất |
+| 07 | Lịch thuế | `/lich-thue-hkd` | Hạn nộp cả năm đúng trường hợp, tự lùi ngày nghỉ; file .ics nhập Google Calendar, iPhone có nhắc trước |
+| 08 | Hóa đơn điện tử | `/hoa-don-dien-tu-hkd` | Có phải dùng không, hóa đơn có mã hay máy tính tiền, hạn đăng ký 30 ngày, lập đúng, sửa hóa đơn sai (NĐ 254/2026) |
+| 09 | Đăng ký hộ kinh doanh | `/dang-ky-ho-kinh-doanh` | Thành lập, thay đổi, mở thêm cửa hàng, tạm ngừng, chấm dứt + việc phía thuế đi kèm; kiểm tra thủ tục mới nhất |
+| 10 | Cho thuê nhà | `/cho-thue-nha` | Thuế cho thuê nhà, mặt bằng: mốc 1 tỷ, GTGT 5% + TNCN 5%, nhiều hợp đồng, trả trước, 01/BĐS, bên thuê khai thay |
+| 11 | Chậm nộp, phạt | `/xu-ly-cham-nop-phat` | Tiền chậm nộp 0,03%/ngày, khung phạt trễ tờ khai, mốc 90 ngày, khai bổ sung, bất khả kháng, soạn giải trình |
+| 12 | Nhân viên | `/thue-nhan-vien-hkd` | Lương thực nhận, thuế TNCN, bảo hiểm phần nhân viên và hộ, lương tối thiểu vùng, bảng lương, khung hợp đồng |
 
 ## Cài đặt
 
@@ -34,7 +41,7 @@ Trên điện thoại: bấm vào tên file → nút **Download** (biểu tượ
 2. Vào **Settings → Capabilities → Skills → Upload skill**.
 3. Tải lên từng file trong thư mục [`dist/`](dist/) (ví dụ `dist/ghi-so-hkd.zip`).
 
-Sau đó cứ nói tự nhiên: "ghi sổ giúp tôi từ ảnh này", "doanh thu tôi đã vượt 1 tỷ chưa", Claude tự chọn skill.
+Sau đó cứ nói tự nhiên: "ghi sổ giúp tôi từ ảnh này", "doanh thu tôi đã vượt 1 tỷ chưa", "cho thuê nhà 1,2 tỷ thuế bao nhiêu", Claude tự chọn skill.
 
 ### Claude Code – cài qua plugin marketplace
 
@@ -89,6 +96,10 @@ Tóm tắt có nguồn: [`shared/quy-dinh-thue-hkd-2026.md`](shared/quy-dinh-thu
 | Nghị định 117/2025/NĐ-CP | Thuế với kinh doanh trên sàn TMĐT, nền tảng số |
 | Thông tư 18/2026/TT-BTC | Hồ sơ, thủ tục, mẫu tờ khai (sửa đổi bởi Thông tư 50/2026/TT-BTC) |
 | Thông tư 152/2025/TT-BTC | Chế độ kế toán, mẫu sổ hộ kinh doanh |
+| Thông tư 91/2026/TT-BTC | Hướng dẫn NĐ 254/2026 về hóa đơn (xử lý hóa đơn sai) – tóm tắt từ nguồn thứ cấp |
+| Nghị định 168/2025/NĐ-CP, 296/2026/NĐ-CP; QĐ 1995/QĐ-BTC | Đăng ký hộ kinh doanh – tóm tắt từ nguồn thứ cấp |
+| Nghị định 125/2020/NĐ-CP (sửa đổi đến NĐ 291/2026) | Xử phạt vi phạm hành chính về thuế, hóa đơn – tóm tắt từ nguồn thứ cấp |
+| Luật BHXH 41/2024/QH15; NĐ 293/2025/NĐ-CP | Bảo hiểm bắt buộc; lương tối thiểu vùng 2026 – tóm tắt từ nguồn thứ cấp |
 
 ## Script đi kèm
 
@@ -96,8 +107,13 @@ Tóm tắt có nguồn: [`shared/quy-dinh-thue-hkd-2026.md`](shared/quy-dinh-thu
 |---|---|
 | `skills/ghi-so-hkd/scripts/tao_so_doanh_thu.py` | Tạo file Excel sổ S1a/S2a-HKD + tab Tổng hợp; nạp dữ liệu từ CSV |
 | `skills/doi-soat-doanh-thu/scripts/doi_soat.py` | Phân loại giao dịch sao kê, cộng doanh thu theo quý, so mốc, tránh cộng trùng tiền sàn |
+| `skills/tinh-thue-hkd/scripts/tinh_thue.py` | Ước tính GTGT, TNCN theo ngành/quý; so 2 cách tính TNCN |
+| `skills/lich-thue-hkd/scripts/tao_lich_thue.py` | Lịch hạn nộp + file .ics |
+| `skills/cho-thue-nha/scripts/tinh_thue_cho_thue.py` | Thuế cho thuê BĐS theo hợp đồng, 2 lần khai |
+| `skills/xu-ly-cham-nop-phat/scripts/tinh_cham_nop.py` | Tiền chậm nộp, khung phạt chậm nộp tờ khai |
+| `skills/thue-nhan-vien-hkd/scripts/tinh_luong.py` | Lương thực nhận, bảo hiểm, TNCN, chi phí của hộ |
 
-Thư viện Python: `pip install pandas openpyxl`.
+Thư viện Python: `pip install pandas openpyxl` (2 script đầu); các script còn lại chỉ cần Python 3.
 
 ## Cấu trúc repo
 

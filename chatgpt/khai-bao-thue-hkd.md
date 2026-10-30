@@ -25,7 +25,7 @@ Cần biết: doanh thu năm (ước tính), kênh bán (cửa hàng; sàn có t
 | # | Trường hợp | Mẫu | Kỳ, hạn nộp | Căn cứ |
 |---|---|---|---|---|
 | 1 | Doanh thu năm từ 1 tỷ trở xuống, đang hoạt động | 01/TKN-CNKD (thông báo doanh thu) | Năm; chậm nhất 31/01 năm sau | NĐ 68/2026 Đ.8 k.1 điểm a; TT 18/2026 Đ.4 k.1 điểm a |
-| 2 | Mới ra kinh doanh, doanh thu từ 1 tỷ trở xuống | 01/TKN-CNKD + 01/BK-STK kèm theo | Mẫu có kỳ "6 tháng đầu năm/6 tháng cuối năm"; hạn: theo thông báo của cơ quan thuế (kiểm tra ở Bước 2) | TT 18/2026 Đ.4 k.1 điểm a, d |
+| 2 | Mới ra kinh doanh, doanh thu từ 1 tỷ trở xuống | 01/TKN-CNKD + 01/BK-STK kèm theo | Bắt đầu trong 6 tháng đầu năm: kỳ "6 tháng đầu năm" (doanh thu đến 30/6) hạn **31/07**, kỳ "6 tháng cuối năm" hạn 31/01 năm sau. Bắt đầu trong 6 tháng cuối năm: hạn 31/01 năm sau. Lũy kế vượt 1 tỷ → khai quý từ quý vượt | NĐ 68/2026 Đ.9 k.1, k.2; TT 18/2026 Đ.4 k.1 điểm a, d |
 | 3 | Trên 1 tỷ, nộp TNCN theo tỷ lệ % trên doanh thu | 01/CNKD | Quý; ngày cuối tháng đầu của quý sau | NĐ 68/2026 Đ.8 k.3, Đ.10; TT 18/2026 Đ.4 k.1 điểm b |
 | 4 | Doanh thu vượt 1 tỷ giữa năm | 01/CNKD từ quý vượt mốc; đăng ký hóa đơn điện tử trong 30 ngày | Như trường hợp 3 | NĐ 68/2026 Đ.8 k.1, k.5 |
 | 5 | Trên 3 tỷ, hoặc chọn TNCN theo thu nhập | 01/CNKD (tạm nộp) + quyết toán 02/CNKD-TNCN-QTT (+ bảng kê 01/BK-HTK nếu thuộc diện) | Quý; quyết toán chậm nhất 31/03 năm sau | NĐ 68/2026 Đ.8 k.3, Đ.10 k.2, Đ.18 k.4; TT 18/2026 Đ.4 k.1 điểm c |
@@ -34,7 +34,7 @@ Cần biết: doanh thu năm (ước tính), kênh bán (cửa hàng; sàn có t
 | 8 | Thông báo tài khoản ngân hàng, ví điện tử | 01/BK-STK | Kèm tờ khai/thông báo doanh thu đầu tiên của năm; khi thay đổi tài khoản | NĐ 68/2026 Đ.13 k.4; TT 18/2026 Đ.4 k.1 điểm d |
 | 9 | Thay đổi, tạm ngừng, chấm dứt địa điểm kinh doanh | 01/TB-ĐĐKD | Trong 10 ngày làm việc | NĐ 68/2026 Đ.8 k.4 |
 
-Trường hợp ngoài bảng (cho thuê bất động sản 01/BĐS, đại lý xổ số, bảo hiểm, đa cấp) → nói rõ skill chưa hướng dẫn chi tiết, khuyên hỏi cơ quan thuế.
+Cho thuê bất động sản (01/BĐS) → tính và xác định kỳ khai bằng skill `cho-thue-nha`, rồi quay lại đây cho bước bấm. Đại lý xổ số, bảo hiểm, đa cấp → doanh nghiệp khấu trừ, khai thay (NĐ 68/2026 Đ.8 k.7); trường hợp khác ngoài bảng → nói rõ skill chưa hướng dẫn chi tiết, khuyên hỏi cơ quan thuế. Số thuế ước tính: skill `tinh-thue-hkd`; trễ hạn: `xu-ly-cham-nop-phat`.
 
 ## Bước 2. KIỂM TRA GIAO DIỆN VÀ MẪU MỚI NHẤT (bắt buộc trước khi chỉ nút bấm)
 

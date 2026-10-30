@@ -1,11 +1,23 @@
 {
   "name": "skill-ho-kinh-doanh",
-  "description": "Bộ skill AI cho hộ kinh doanh Việt Nam 2026: ghi sổ S1a/S2a-HKD, đối soát sao kê, hỏi đáp thuế có dẫn nguồn, kiểm tra hóa đơn.",
+  "description": "Bộ 12 skill AI cho hộ kinh doanh, cá nhân kinh doanh Việt Nam 2026: sổ sách, đối soát, tính thuế, khai báo eTax, lịch thuế, hóa đơn điện tử, đăng ký hộ, cho thuê nhà, chậm nộp – phạt, nhân viên.",
   "owner": {
     "name": "nguyenvansuai",
     "url": "https://github.com/nguyenvansuai"
   },
   "plugins": [
+    {
+      "name": "cho-thue-nha",
+      "source": "./skills/cho-thue-nha",
+      "description": "Tính và hướng dẫn khai thuế cho thuê nhà, căn hộ, mặt bằng, kiot của cá nhân năm 2026 — mốc 1 tỷ, GTGT 5% và TNCN 5% phần vượt, chọn hợp đồng để trừ 1 tỷ khi có nhiều nhà, tiền thuê trả trước nhiều năm, khai 1 lần hay 2 lần/năm (31/7, 31/1), mẫu 01/BĐS, bên thuê là công ty khai thay, nộp ở đâu, có phải xuất hóa đơn không. Dùng khi người dùng hỏi \"cho thuê nhà có phải đóng thuế không\", \"thuế cho thuê mặt bằng\", \"khai 01/BĐS\", \"công ty thuê nhà nộp thuế thay\", \"cho thuê 1,2 tỷ một năm thuế bao nhiêu\".",
+      "category": "ho-kinh-doanh"
+    },
+    {
+      "name": "dang-ky-ho-kinh-doanh",
+      "source": "./skills/dang-ky-ho-kinh-doanh",
+      "description": "Hướng dẫn thủ tục vòng đời hộ kinh doanh năm 2026 — đăng ký thành lập (cấp xã, nộp online qua Cổng Dịch vụ công hoặc VNeID, 3 ngày làm việc), thay đổi nội dung, mở thêm cửa hàng, tạm ngừng, tiếp tục, chấm dứt; kèm các việc phía thuế phải làm (thông báo địa điểm trong 10 ngày làm việc, tài khoản ngân hàng, thông báo doanh thu khi mới mở hoặc khi đóng). Kiểm tra thủ tục mới nhất trước khi hướng dẫn. Dùng khi người dùng hỏi \"đăng ký hộ kinh doanh\", \"mở thêm chi nhánh, cửa hàng\", \"tạm ngừng kinh doanh\", \"đóng hộ kinh doanh\", \"đổi ngành nghề, địa chỉ\", \"giấy phép kinh doanh hộ\".",
+      "category": "ho-kinh-doanh"
+    },
     {
       "name": "doi-soat-doanh-thu",
       "source": "./skills/doi-soat-doanh-thu",
@@ -16,6 +28,12 @@
       "name": "ghi-so-hkd",
       "source": "./skills/ghi-so-hkd",
       "description": "Ghi sổ doanh thu cho hộ kinh doanh Việt Nam từ ảnh chụp sổ tay, hóa đơn bán hàng, tin nhắn chốt đơn hoặc ghi chép — chuyển thành sổ S1a-HKD (doanh thu từ 1 tỷ trở xuống) hoặc S2a-HKD (trên 1 tỷ, theo nhóm ngành) theo Thông tư 152/2025/TT-BTC, đánh dấu [?] chỗ chữ mờ, cộng theo tháng/quý, xuất file Excel có công thức. Dùng khi người dùng nói \"ghi sổ\", \"chụp sổ bán hàng\", \"làm sổ doanh thu\", \"sổ S1a\", \"sổ S2a\", \"chuyển sổ tay sang Excel\", \"sổ sách hộ kinh doanh\".",
+      "category": "ho-kinh-doanh"
+    },
+    {
+      "name": "hoa-don-dien-tu-hkd",
+      "source": "./skills/hoa-don-dien-tu-hkd",
+      "description": "Hướng dẫn hộ kinh doanh dùng hóa đơn điện tử theo Nghị định 254/2026 (từ 01/07/2026) — có phải dùng không, chọn hóa đơn có mã hay hóa đơn từ máy tính tiền, hạn đăng ký 30 ngày khi vượt 1 tỷ, khi nào phải lập, ghi những nội dung gì, gửi khách thế nào, xử lý hóa đơn viết sai (thông báo 04/SS-HĐĐT, hóa đơn điều chỉnh, thay thế), trường hợp cấp theo từng lần phát sinh; kiểm tra giao diện mới nhất trước khi chỉ bước bấm. Dùng khi người dùng hỏi \"có phải xuất hóa đơn không\", \"đăng ký hóa đơn điện tử\", \"máy tính tiền\", \"xuất hóa đơn sai\", \"hóa đơn điều chỉnh\", \"khách đòi hóa đơn\".",
       "category": "ho-kinh-doanh"
     },
     {
@@ -37,9 +55,33 @@
       "category": "ho-kinh-doanh"
     },
     {
+      "name": "lich-thue-hkd",
+      "source": "./skills/lich-thue-hkd",
+      "description": "Lập lịch hạn nộp thuế cả năm cho hộ kinh doanh, cá nhân kinh doanh, người cho thuê nhà theo đúng trường hợp (từ 1 tỷ trở xuống, mới ra kinh doanh, trên 1 tỷ khai quý, trên 3 tỷ quyết toán, khai tháng, cho thuê BĐS 1 hay 2 lần/năm); tự lùi hạn khi trùng thứ Bảy, Chủ nhật, ngày lễ; xuất file .ics để nhập Google Calendar, iPhone, Outlook có nhắc trước 7 ngày và 1 ngày. Dùng khi người dùng hỏi \"hạn nộp thuế khi nào\", \"lịch thuế năm nay\", \"nhắc tôi hạn nộp tờ khai\", \"đưa hạn thuế vào Google Calendar\", \"quý này hạn ngày mấy\".",
+      "category": "ho-kinh-doanh"
+    },
+    {
+      "name": "thue-nhan-vien-hkd",
+      "source": "./skills/thue-nhan-vien-hkd",
+      "description": "Hỗ trợ hộ kinh doanh thuê nhân viên năm 2026 — tính lương thực nhận, thuế TNCN (giảm trừ 15,5 triệu, 6,2 triệu/người phụ thuộc, biểu lũy tiến 5 bậc), bảo hiểm bắt buộc phần nhân viên và phần hộ phải đóng, tổng chi phí thuê một người; kiểm tra lương tối thiểu vùng; khi nào phải đóng BHXH (hợp đồng từ 1 tháng), chủ hộ có phải đóng không; chi phí lương được trừ thuế; khung hợp đồng lao động, bảng lương. Dùng khi người dùng hỏi \"thuê nhân viên phải đóng gì\", \"lương 8 triệu thực nhận bao nhiêu\", \"có phải đóng bảo hiểm cho nhân viên\", \"khấu trừ thuế lương\", \"làm bảng lương\", \"chủ hộ có phải đóng BHXH\".",
+      "category": "ho-kinh-doanh"
+    },
+    {
+      "name": "tinh-thue-hkd",
+      "source": "./skills/tinh-thue-hkd",
+      "description": "Tính, ước tính số thuế GTGT và TNCN hộ kinh doanh, cá nhân kinh doanh phải nộp năm 2026 theo từng nhóm ngành, theo quý và cả năm; so sánh 2 cách tính TNCN (tỷ lệ % trên doanh thu vượt 1 tỷ hay 15% trên thu nhập), tìm mức chi phí hòa vốn, phân bổ mức trừ 1 tỷ có lợi nhất khi nhiều ngành; trừ số thuế sàn đã khấu trừ. Dùng khi người dùng hỏi \"tôi phải đóng thuế bao nhiêu\", \"tính thuế giúp\", \"nên chọn cách tính nào\", \"doanh thu 1,5 tỷ thuế bao nhiêu\", \"thuế quý này\", \"so sánh tính theo doanh thu và theo thu nhập\".",
+      "category": "ho-kinh-doanh"
+    },
+    {
+      "name": "xu-ly-cham-nop-phat",
+      "source": "./skills/xu-ly-cham-nop-phat",
+      "description": "Xử lý khi hộ kinh doanh, cá nhân kinh doanh trễ hạn hoặc khai sai thuế — tính tiền chậm nộp 0,03%/ngày, ước khung phạt chậm nộp tờ khai, phân biệt vi phạm thủ tục với trốn thuế (mốc 90 ngày), khai bổ sung trong 5 năm để không bị phạt khai sai, gia hạn và miễn khi bất khả kháng, đọc thông báo/quyết định của cơ quan thuế và soạn văn bản giải trình. Dùng khi người dùng nói \"quên nộp tờ khai\", \"nộp thuế trễ\", \"bị phạt bao nhiêu\", \"tiền chậm nộp\", \"khai sai doanh thu\", \"khai bổ sung\", \"nhận thông báo của chi cục thuế\", \"giải trình với thuế\".",
+      "category": "ho-kinh-doanh"
+    },
+    {
       "name": "tron-bo-skill-hkd",
       "source": "./",
-      "description": "Cài cả bộ skill hộ kinh doanh (ghi sổ, đối soát, hỏi đáp thuế, kiểm tra hóa đơn, khai báo thuế) trong một lần.",
+      "description": "Cài cả bộ 12 skill hộ kinh doanh (ghi sổ, đối soát, hỏi đáp, hóa đơn, khai báo, tính thuế, lịch thuế, đăng ký hộ, cho thuê nhà, chậm nộp – phạt, nhân viên) trong một lần.",
       "category": "ho-kinh-doanh"
     }
   ]

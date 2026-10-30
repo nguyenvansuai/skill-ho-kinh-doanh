@@ -101,13 +101,13 @@ def sinh_marketplace():
     plugins.append({
         "name": "tron-bo-skill-hkd",
         "source": "./",
-        "description": "Cài cả bộ skill hộ kinh doanh (ghi sổ, đối soát, hỏi đáp thuế, kiểm tra hóa đơn, khai báo thuế) trong một lần.",
+        "description": "Cài cả bộ 12 skill hộ kinh doanh (ghi sổ, đối soát, hỏi đáp, hóa đơn, khai báo, tính thuế, lịch thuế, đăng ký hộ, cho thuê nhà, chậm nộp – phạt, nhân viên) trong một lần.",
         "category": "ho-kinh-doanh",
     })
     data = {
         "name": "skill-ho-kinh-doanh",
-        "description": "Bộ skill AI cho hộ kinh doanh Việt Nam 2026: ghi sổ S1a/S2a-HKD, đối soát sao kê, "
-                       "hỏi đáp thuế có dẫn nguồn, kiểm tra hóa đơn.",
+        "description": "Bộ 12 skill AI cho hộ kinh doanh, cá nhân kinh doanh Việt Nam 2026: sổ sách, đối soát, tính thuế, "
+                       "khai báo eTax, lịch thuế, hóa đơn điện tử, đăng ký hộ, cho thuê nhà, chậm nộp – phạt, nhân viên.",
         "owner": {"name": "nguyenvansuai", "url": "https://github.com/nguyenvansuai"},
         "plugins": plugins,
     }

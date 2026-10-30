@@ -52,6 +52,12 @@ Ví dụ: bán mỹ phẩm (hàng hóa), doanh thu 1,2 tỷ/năm → TNCN = (1,2
 
 **Hộ đã nộp thuế quý 1/2026 theo mốc cũ 500 triệu:** số đã nộp được bù trừ hoặc hoàn theo Điều 12 Nghị định 68/2026 (sửa bởi NĐ 141/2026). Khuyên người dùng liên hệ cơ quan thuế quản lý, không tự hủy tờ khai.
 
+**Hộ mới ra kinh doanh** (NĐ 68/2026 Đ.9): bắt đầu trong 6 tháng đầu năm, doanh thu thực tế từ 1 tỷ trở xuống → thông báo doanh thu từ khi bắt đầu đến 30/6 chậm nhất **31/07**, và 6 tháng cuối năm chậm nhất 31/01 năm sau; bắt đầu trong 6 tháng cuối năm → chậm nhất 31/01 năm sau (k.1). Lũy kế vượt 1 tỷ → khai quý từ quý vượt (k.2).
+
+**Tạm ngừng, chấm dứt** (NĐ 68/2026 Đ.8 k.6): tạm ngừng trọn quý không nộp tờ khai quý đó; chấm dứt trong năm → thông báo doanh thu lũy kế đến ngày chấm dứt cùng hồ sơ chấm dứt.
+
+**Cho thuê bất động sản** (Luật 109/2025 Đ.7 k.4; NĐ 68/2026 Đ.4 k.4, Đ.8 k.3 điểm d): trên 1 tỷ → GTGT 5% toàn bộ + TNCN 5% phần vượt 1 tỷ; tự khai 2 lần (31/07, 31/01) hoặc 1 lần (31/01), Mẫu 01/BĐS. Chi tiết: skill `cho-thue-nha`.
+
 ## 3. Các nghĩa vụ khác
 
 - **Tài khoản ngân hàng, ví điện tử:** thông báo điện tử cho cơ quan thuế tất cả tài khoản, ví dùng cho kinh doanh (NĐ 68/2026 Đ.13 k.4; mẫu 01/BK-STK theo TT 18/2026).
