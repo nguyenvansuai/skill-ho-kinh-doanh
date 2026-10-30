@@ -37,8 +37,8 @@ Câu lệnh ngắn là đủ, ví dụ "Ghi sổ giúp tôi, cả năm khoảng 
 1. Bảng Markdown: `Ngày | Diễn giải | Số tiền` (S2a thêm `Số hiệu | Nhóm ngành`).
 2. Tổng theo tháng, lũy kế, trạng thái so với mốc doanh thu.
 3. Bảng **Cần anh/chị kiểm tra**: các ô `[?]`, dòng đã bỏ ra.
-5. Khi đã biết doanh thu năm: thêm mục **Việc anh/chị cần làm** lấy đúng danh sách A hoặc B ở mục 3a của `references/quy-dinh-thue-hkd-2026.md`, giữ nguyên căn cứ (văn bản, điều, khoản). Không thêm việc ngoài danh sách.
-4. Người dùng cần file Excel: lưu dữ liệu đã xác nhận ra CSV (cột `ngay,dien_giai,so_tien` cho S1a; thêm `so_hieu,nhom_nganh` cho S2a), rồi chạy:
+4. Khi đã biết doanh thu năm: thêm mục **Việc anh/chị cần làm** lấy đúng danh sách A hoặc B ở mục 3a của `references/quy-dinh-thue-hkd-2026.md`, giữ nguyên căn cứ (văn bản, điều, khoản). Không thêm việc ngoài danh sách.
+5. Người dùng cần file Excel: lưu dữ liệu đã xác nhận ra CSV (cột `ngay,dien_giai,so_tien` cho S1a; thêm `so_hieu,nhom_nganh` cho S2a), rồi chạy:
 
 ```bash
 python3 scripts/tao_so_doanh_thu.py so_doanh_thu.xlsx --csv du_lieu.csv --so S1a --nam 2026
