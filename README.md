@@ -1,6 +1,6 @@
 # Skill AI cho Hộ kinh doanh (Việt Nam 2026)
 
-Bộ skill giúp Claude (và ChatGPT) hỗ trợ **chủ hộ kinh doanh, tiểu thương** làm việc sổ sách và thuế **theo quy định năm 2026**: ghi sổ doanh thu S1a/S2a-HKD theo Thông tư 152/2025/TT-BTC, đối soát sao kê với doanh thu sàn, so mốc **1 tỷ đồng** (Nghị định 141/2026/NĐ-CP), hỏi đáp thuế có dẫn nguồn văn bản, kiểm tra hóa đơn điện tử.
+Bộ skill giúp Claude (và ChatGPT) hỗ trợ **chủ hộ kinh doanh, tiểu thương** làm việc sổ sách và thuế **theo quy định năm 2026**: ghi sổ doanh thu S1a/S2a-HKD theo Thông tư 152/2025/TT-BTC, đối soát sao kê với doanh thu sàn, so mốc **1 tỷ đồng** (Nghị định 141/2026/NĐ-CP), hỏi đáp thuế có dẫn nguồn văn bản, kiểm tra hóa đơn điện tử, hướng dẫn khai báo thuế trên eTax Mobile.
 
 Mọi skill tuân theo cùng nguyên tắc: **không bịa, không đoán số** (chữ mờ thì đánh dấu `[?]`), tính toán bằng code, viện dẫn pháp luật luôn kèm số hiệu văn bản và lưu ý kiểm tra văn bản hiện hành, **không tự khai, nộp, ký thay**.
 
@@ -24,6 +24,7 @@ Trên điện thoại: bấm vào tên file → nút **Download** (biểu tượ
 | 02 | Đối soát doanh thu | `/doi-soat-doanh-thu` | Sao kê + báo cáo sàn → tách tiền bán hàng, nội bộ, vay; cộng theo quý; so mốc 1 tỷ, 3 tỷ |
 | 03 | Hỏi đáp thuế | `/hoi-dap-thue-hkd` | Trả lời có dẫn nguồn; đọc thông báo thuế; soạn câu hỏi cho cán bộ thuế; checklist theo quý |
 | 04 | Kiểm tra hóa đơn | `/kiem-tra-hoa-don` | Kiểm tra trước khi xuất hóa đơn; bảng chi phí từ hóa đơn mua vào; ngưỡng hóa đơn điện tử |
+| 05 | Khai báo thuế | `/khai-bao-thue-hkd` | Đúng trường hợp → mẫu, hạn nộp, ô cần điền; các bước trên eTax Mobile và Cổng dịch vụ công, **kiểm tra lại giao diện mới nhất** trước khi hướng dẫn |
 
 ## Cài đặt
 

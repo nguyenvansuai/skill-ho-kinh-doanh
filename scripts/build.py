@@ -101,7 +101,7 @@ def sinh_marketplace():
     plugins.append({
         "name": "tron-bo-skill-hkd",
         "source": "./",
-        "description": "Cài cả bộ skill hộ kinh doanh (ghi sổ, đối soát, hỏi đáp thuế, kiểm tra hóa đơn) trong một lần.",
+        "description": "Cài cả bộ skill hộ kinh doanh (ghi sổ, đối soát, hỏi đáp thuế, kiểm tra hóa đơn, khai báo thuế) trong một lần.",
         "category": "ho-kinh-doanh",
     })
     data = {

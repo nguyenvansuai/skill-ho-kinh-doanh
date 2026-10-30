@@ -25,6 +25,12 @@
       "category": "ho-kinh-doanh"
     },
     {
+      "name": "khai-bao-thue-hkd",
+      "source": "./skills/khai-bao-thue-hkd",
+      "description": "Hướng dẫn hộ kinh doanh, cá nhân kinh doanh Việt Nam khai báo thuế từng bước theo đúng trường hợp — thông báo doanh thu (01/TKN-CNKD) khi từ 1 tỷ trở xuống, tờ khai quý 01/CNKD khi trên 1 tỷ, quyết toán 02/CNKD-TNCN-QTT, thông báo tài khoản 01/BK-STK, địa điểm kinh doanh; chỉ ra ô nào điền số nào, hạn nộp, và các bước bấm trên app eTax Mobile hoặc Cổng dịch vụ công thuế — luôn kiểm tra lại giao diện mới nhất trước khi hướng dẫn. Dùng khi người dùng hỏi \"khai thuế thế nào\", \"nộp tờ khai 01/CNKD\", \"thông báo doanh thu trên eTax\", \"kê khai thuế quý\", \"khai báo tài khoản ngân hàng với thuế\", \"eTax Mobile làm sao\".",
+      "category": "ho-kinh-doanh"
+    },
+    {
       "name": "kiem-tra-hoa-don",
       "source": "./skills/kiem-tra-hoa-don",
       "description": "Hỗ trợ hóa đơn cho hộ kinh doanh Việt Nam — kiểm tra thông tin trước khi xuất hóa đơn điện tử (người mua, mã số thuế, hàng hóa, phép tính), lập bảng chi phí từ ảnh hóa đơn mua vào, đánh dấu khoản từ 5 triệu đồng trả tiền mặt, nhắc ngưỡng bắt buộc hóa đơn điện tử trên 1 tỷ. Dùng khi người dùng nói \"kiểm tra hóa đơn\", \"trước khi xuất hóa đơn\", \"lập bảng chi phí\", \"chụp hóa đơn nhập hàng\", \"có cần hóa đơn điện tử không\", \"máy tính tiền\".",
@@ -33,7 +39,7 @@
     {
       "name": "tron-bo-skill-hkd",
       "source": "./",
-      "description": "Cài cả bộ skill hộ kinh doanh (ghi sổ, đối soát, hỏi đáp thuế, kiểm tra hóa đơn) trong một lần.",
+      "description": "Cài cả bộ skill hộ kinh doanh (ghi sổ, đối soát, hỏi đáp thuế, kiểm tra hóa đơn, khai báo thuế) trong một lần.",
       "category": "ho-kinh-doanh"
     }
   ]
