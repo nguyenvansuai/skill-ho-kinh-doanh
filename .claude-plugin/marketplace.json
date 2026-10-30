@@ -1,0 +1,40 @@
+{
+  "name": "skill-ho-kinh-doanh",
+  "description": "Bộ skill AI cho hộ kinh doanh Việt Nam 2026: ghi sổ S1a/S2a-HKD, đối soát sao kê, hỏi đáp thuế có dẫn nguồn, kiểm tra hóa đơn.",
+  "owner": {
+    "name": "nguyenvansuai",
+    "url": "https://github.com/nguyenvansuai"
+  },
+  "plugins": [
+    {
+      "name": "doi-soat-doanh-thu",
+      "source": "./skills/doi-soat-doanh-thu",
+      "description": "Đối soát doanh thu hộ kinh doanh từ sao kê ngân hàng, ví điện tử và báo cáo doanh thu sàn (Shopee, TikTok Shop, Lazada) — phân loại tiền bán hàng, chuyển nội bộ, vay/trả nợ, chưa rõ; tránh cộng trùng tiền sàn; cộng theo quý, lũy kế và so mốc 1 tỷ, 3 tỷ. Dùng khi người dùng nói \"đối soát\", \"sao kê\", \"cộng doanh thu theo quý\", \"tôi đang ở mốc nào\", \"doanh thu đã vượt 1 tỷ chưa\", \"kiểm tra tiền vào tài khoản\".",
+      "category": "ho-kinh-doanh"
+    },
+    {
+      "name": "ghi-so-hkd",
+      "source": "./skills/ghi-so-hkd",
+      "description": "Ghi sổ doanh thu cho hộ kinh doanh Việt Nam từ ảnh chụp sổ tay, hóa đơn bán hàng, tin nhắn chốt đơn hoặc ghi chép — chuyển thành sổ S1a-HKD (doanh thu từ 1 tỷ trở xuống) hoặc S2a-HKD (trên 1 tỷ, theo nhóm ngành) theo Thông tư 152/2025/TT-BTC, đánh dấu [?] chỗ chữ mờ, cộng theo tháng/quý, xuất file Excel có công thức. Dùng khi người dùng nói \"ghi sổ\", \"chụp sổ bán hàng\", \"làm sổ doanh thu\", \"sổ S1a\", \"sổ S2a\", \"chuyển sổ tay sang Excel\", \"sổ sách hộ kinh doanh\".",
+      "category": "ho-kinh-doanh"
+    },
+    {
+      "name": "hoi-dap-thue-hkd",
+      "source": "./skills/hoi-dap-thue-hkd",
+      "description": "Trả lời câu hỏi thuế của hộ kinh doanh Việt Nam năm 2026 có dẫn nguồn văn bản — ngưỡng 1 tỷ, hóa đơn điện tử, sổ sách, kê khai theo quý, bán trên sàn TMĐT và Facebook, thông báo tài khoản; giải thích thông báo của cơ quan thuế bằng lời dễ hiểu; soạn câu hỏi mang đi hỏi cán bộ thuế; lập checklist việc thuế theo quý. Dùng khi người dùng hỏi \"hộ kinh doanh phải nộp thuế gì\", \"doanh thu 1,2 tỷ cần làm gì\", \"có phải xuất hóa đơn không\", \"bán Shopee nộp thuế thế nào\", \"đọc giúp thông báo thuế\", \"hạn nộp thuế quý\".",
+      "category": "ho-kinh-doanh"
+    },
+    {
+      "name": "kiem-tra-hoa-don",
+      "source": "./skills/kiem-tra-hoa-don",
+      "description": "Hỗ trợ hóa đơn cho hộ kinh doanh Việt Nam — kiểm tra thông tin trước khi xuất hóa đơn điện tử (người mua, mã số thuế, hàng hóa, phép tính), lập bảng chi phí từ ảnh hóa đơn mua vào, đánh dấu khoản từ 5 triệu đồng trả tiền mặt, nhắc ngưỡng bắt buộc hóa đơn điện tử trên 1 tỷ. Dùng khi người dùng nói \"kiểm tra hóa đơn\", \"trước khi xuất hóa đơn\", \"lập bảng chi phí\", \"chụp hóa đơn nhập hàng\", \"có cần hóa đơn điện tử không\", \"máy tính tiền\".",
+      "category": "ho-kinh-doanh"
+    },
+    {
+      "name": "tron-bo-skill-hkd",
+      "source": "./",
+      "description": "Cài cả bộ skill hộ kinh doanh (ghi sổ, đối soát, hỏi đáp thuế, kiểm tra hóa đơn) trong một lần.",
+      "category": "ho-kinh-doanh"
+    }
+  ]
+}
