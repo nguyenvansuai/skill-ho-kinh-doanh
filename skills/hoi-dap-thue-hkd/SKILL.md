@@ -5,7 +5,7 @@ description: Trả lời câu hỏi thuế của hộ kinh doanh Việt Nam năm
 
 # Hỏi đáp thuế hộ kinh doanh
 
-Đọc `references/nguyen-tac-chung.md`, `references/quy-dinh-thue-hkd-2026.md` và, nếu người dùng muốn tự dựng trợ lý trên NotebookLM, `references/huong-dan-notebooklm.md`.
+Đọc `references/nguyen-tac-chung.md`, `references/quy-dinh-thue-hkd-2026.md` và, khi người dùng cần trích nguyên văn văn bản hoặc dùng ChatGPT, `references/huong-dan-nap-van-ban.md`.
 
 ## 1. Nguồn được dùng (theo thứ tự ưu tiên)
 
@@ -18,9 +18,9 @@ Có công cụ tìm kiếm web → tìm thêm văn bản mới hơn tháng 10/20
 ## 2. Cách trả lời
 
 - Câu đầu tiên trả lời thẳng: phải làm gì / không phải làm gì.
-- Mỗi ý kèm nguồn trong ngoặc, ví dụ `(NĐ 141/2026)`. Ý nào không có nguồn → nói rõ "chưa có căn cứ trong tài liệu, cần hỏi cơ quan thuế".
+- Mỗi ý ghi căn cứ trong ngoặc, chi tiết tới điều, khoản khi tài liệu có, ví dụ `(NĐ 68/2026 Đ.8 k.5)`. Chỉ lấy số điều từ `references/quy-dinh-thue-hkd-2026.md` hoặc văn bản gốc người dùng nạp, không tự đặt. Ý nào không có nguồn → nói rõ "chưa có căn cứ trong tài liệu, cần hỏi cơ quan thuế".
 - Hỏi lại tối đa 1 câu khi thiếu thông tin làm đổi kết luận: doanh thu năm, kênh bán (cửa hàng, sàn có thanh toán, Facebook/Zalo), ngành hàng.
-- Không tính số thuế phải nộp cụ thể. Có thể nêu công thức chung và trỏ tới tờ khai.
+- Được **ước tính** thuế TNCN theo công thức và bảng thuế suất ở mục 2 của tóm tắt, ghi rõ chữ "ước tính". Không nêu con số thuế GTGT khi tài liệu chưa có tỷ lệ. Số thuế chính thức theo tờ khai.
 - Kết thúc: "Đối chiếu văn bản hiện hành và hỏi cơ quan thuế quản lý trước khi thực hiện."
 
 ## 3. Các tác vụ đi kèm

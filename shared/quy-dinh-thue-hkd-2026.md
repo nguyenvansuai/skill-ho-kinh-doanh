@@ -22,8 +22,8 @@
 
 | Doanh thu năm | Nghĩa vụ chính | Nguồn |
 |---|---|---|
-| Từ 1 tỷ đồng trở xuống | Không nộp thuế GTGT, TNCN. Vẫn thông báo doanh thu với cơ quan thuế theo hướng dẫn. Được tự nguyện dùng hóa đơn điện tử | NĐ 141/2026 |
-| Trên 1 tỷ đồng | Khai thuế từ quý phát sinh doanh thu vượt mốc. **Bắt buộc** hóa đơn điện tử có mã của cơ quan thuế hoặc khởi tạo từ máy tính tiền; đăng ký trong 30 ngày kể từ cuối kỳ có doanh thu lũy kế trên 1 tỷ | NĐ 141/2026, NĐ 254/2026 |
+| Từ 1 tỷ đồng trở xuống | Không nộp thuế GTGT, TNCN. Thông báo doanh thu thực tế chậm nhất 31/01 năm sau. Được tự nguyện dùng hóa đơn điện tử | NĐ 68/2026 Đ.3, Đ.4 k.1, Đ.8 k.1 (sửa bởi NĐ 141/2026) |
+| Trên 1 tỷ đồng | Khai, nộp thuế từ quý phát sinh doanh thu vượt mốc (NĐ 68/2026 Đ.8 k.1). Hạn nộp tờ khai quý: ngày cuối tháng đầu quý sau (Đ.8 k.3). **Bắt buộc** hóa đơn điện tử có mã hoặc từ máy tính tiền; đăng ký trong 30 ngày kể từ cuối kỳ có doanh thu lũy kế trên 1 tỷ (Đ.8 k.5) | NĐ 68/2026 (VBHN 25/2026), NĐ 254/2026 |
 | Trên 1 tỷ đến 3 tỷ đồng | Thuế TNCN mặc định = (doanh thu − 1 tỷ) × thuế suất theo ngành (bảng dưới); được chọn cách tính theo thu nhập × 15% | NĐ 68/2026 Điều 4 (VBHN 25/2026), Luật 109/2025 Điều 7 |
 | Trên 3 tỷ đến 50 tỷ đồng | Thuế TNCN = thu nhập tính thuế (doanh thu − chi phí) × 17%; quyết toán năm | Luật 109/2025 Điều 7 khoản 2 |
 | Trên 50 tỷ đồng | Thuế TNCN = thu nhập tính thuế × 20%; khai thuế GTGT theo tháng | Luật 109/2025 Điều 7; NĐ 68/2026 |
@@ -47,13 +47,15 @@ Ví dụ minh họa (chỉ thuế TNCN): bán mỹ phẩm, doanh thu 1,2 tỷ/n�
 
 ## 3. Các nghĩa vụ khác
 
-- **Tài khoản ngân hàng, ví điện tử:** thông báo điện tử cho cơ quan thuế tất cả tài khoản, ví dùng cho kinh doanh (NĐ 68/2026; mẫu 01/BK-STK theo TT 18/2026).
+- **Tài khoản ngân hàng, ví điện tử:** thông báo điện tử cho cơ quan thuế tất cả tài khoản, ví dùng cho kinh doanh (NĐ 68/2026 Đ.13 k.4; mẫu 01/BK-STK theo TT 18/2026).
 - **Địa điểm kinh doanh:** thông báo với cơ quan thuế trong 10 ngày làm việc kể từ khi hoạt động (NĐ 68/2026). Nhiều cửa hàng dùng chung mã số thuế, ghi mã địa điểm trên hóa đơn (NĐ 141/2026).
-- **Thương mại điện tử:** sàn có chức năng đặt hàng và thanh toán khấu trừ, khai thay, nộp thay thuế; hộ phải cung cấp đúng mã số thuế hoặc số định danh cho sàn. Bán qua nền tảng không có thanh toán (Facebook, Zalo, website tự bán): hộ tự khai (NĐ 68/2026).
+- **Thương mại điện tử:** sàn có chức năng đặt hàng và thanh toán khấu trừ, khai thay, nộp thay thuế; hộ phải cung cấp đúng mã số thuế hoặc số định danh cho sàn (NĐ 68/2026 Đ.11 k.1, Đ.13 k.8). Bán qua nền tảng không có thanh toán (Facebook, Zalo, website tự bán): hộ tự khai (Đ.11 k.2).
 - **Chi phí được trừ (phương pháp theo thu nhập):** chi phí thực tế phục vụ kinh doanh, có hóa đơn, chứng từ; khoản từ 5 triệu đồng trở lên phải thanh toán không dùng tiền mặt. Không trừ chi phí gia đình, tiền phạt (NĐ 68/2026).
 - **Hóa đơn từ máy tính tiền:** áp dụng cho hộ bán trực tiếp tới người tiêu dùng như bán lẻ, ăn uống, khách sạn, vận tải hành khách, vui chơi giải trí (NĐ 254/2026).
 
 ## 4. Sổ kế toán theo Thông tư 152/2025
+
+Nghĩa vụ dùng sổ kế toán, hóa đơn: NĐ 68/2026 Đ.13 k.5.
 
 | Nhóm | Đối tượng | Sổ |
 |---|---|---|

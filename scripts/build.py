@@ -58,10 +58,10 @@ def sinh_chatgpt():
             f"**Mô tả:** {meta.get('description', '')}",
             "",
             "## Cách cài",
-            "1. ChatGPT → Explore GPTs → Create → tab Configure (hoặc tạo Project và mở Project instructions).",
+            "1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).",
             f"2. Name: `{sk.name}`. Description: copy dòng Mô tả ở trên.",
-            "3. Dán toàn bộ khối **Instructions** bên dưới vào ô Instructions.",
-            "4. Knowledge: tải lên các file " + ", ".join(f"`skills/{sk.name}/references/{f}`" for f in files) + ".",
+            "3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.",
+            "4. Tải lên (Project files hoặc Knowledge) các file " + ", ".join(f"`skills/{sk.name}/references/{f}`" for f in files) + ".",
         ]
         if scripts:
             noi_dung.append("5. Bật **Code Interpreter & Data Analysis** và tải thêm " +

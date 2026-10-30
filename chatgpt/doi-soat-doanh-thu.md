@@ -3,10 +3,10 @@
 **Mô tả:** Đối soát doanh thu hộ kinh doanh từ sao kê ngân hàng, ví điện tử và báo cáo doanh thu sàn (Shopee, TikTok Shop, Lazada) — phân loại tiền bán hàng, chuyển nội bộ, vay/trả nợ, chưa rõ; tránh cộng trùng tiền sàn; cộng theo quý, lũy kế và so mốc 1 tỷ, 3 tỷ. Dùng khi người dùng nói "đối soát", "sao kê", "cộng doanh thu theo quý", "tôi đang ở mốc nào", "doanh thu đã vượt 1 tỷ chưa", "kiểm tra tiền vào tài khoản".
 
 ## Cách cài
-1. ChatGPT → Explore GPTs → Create → tab Configure (hoặc tạo Project và mở Project instructions).
+1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `doi-soat-doanh-thu`. Description: copy dòng Mô tả ở trên.
-3. Dán toàn bộ khối **Instructions** bên dưới vào ô Instructions.
-4. Knowledge: tải lên các file `skills/doi-soat-doanh-thu/references/nguyen-tac-chung.md`, `skills/doi-soat-doanh-thu/references/quy-dinh-thue-hkd-2026.md`.
+3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/doi-soat-doanh-thu/references/nguyen-tac-chung.md`, `skills/doi-soat-doanh-thu/references/quy-dinh-thue-hkd-2026.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/doi-soat-doanh-thu/scripts/doi_soat.py` vào Knowledge.
 
 ## Instructions

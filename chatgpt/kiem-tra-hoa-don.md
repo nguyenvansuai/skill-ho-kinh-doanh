@@ -3,10 +3,10 @@
 **Mô tả:** Hỗ trợ hóa đơn cho hộ kinh doanh Việt Nam — kiểm tra thông tin trước khi xuất hóa đơn điện tử (người mua, mã số thuế, hàng hóa, phép tính), lập bảng chi phí từ ảnh hóa đơn mua vào, đánh dấu khoản từ 5 triệu đồng trả tiền mặt, nhắc ngưỡng bắt buộc hóa đơn điện tử trên 1 tỷ. Dùng khi người dùng nói "kiểm tra hóa đơn", "trước khi xuất hóa đơn", "lập bảng chi phí", "chụp hóa đơn nhập hàng", "có cần hóa đơn điện tử không", "máy tính tiền".
 
 ## Cách cài
-1. ChatGPT → Explore GPTs → Create → tab Configure (hoặc tạo Project và mở Project instructions).
+1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `kiem-tra-hoa-don`. Description: copy dòng Mô tả ở trên.
-3. Dán toàn bộ khối **Instructions** bên dưới vào ô Instructions.
-4. Knowledge: tải lên các file `skills/kiem-tra-hoa-don/references/nguyen-tac-chung.md`, `skills/kiem-tra-hoa-don/references/quy-dinh-thue-hkd-2026.md`.
+3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/kiem-tra-hoa-don/references/nguyen-tac-chung.md`, `skills/kiem-tra-hoa-don/references/quy-dinh-thue-hkd-2026.md`.
 
 ## Instructions
 

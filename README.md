@@ -10,9 +10,9 @@ Mọi skill tuân theo cùng nguyên tắc: **không bịa, không đoán số**
 
 | File | Dùng để |
 |---|---|
-| [`qua-tang/10_cau_lenh_AI_cho_Ho_kinh_doanh.pdf`](qua-tang/10_cau_lenh_AI_cho_Ho_kinh_doanh.pdf) | 10 câu lệnh sao chép dán vào ChatGPT, Gemini, Claude, NotebookLM |
+| [`qua-tang/10_cau_lenh_AI_cho_Ho_kinh_doanh.pdf`](qua-tang/10_cau_lenh_AI_cho_Ho_kinh_doanh.pdf) | 10 câu lệnh sao chép dán vào ChatGPT, Claude |
 | [`qua-tang/So_doanh_thu_HKD_S1a_S2a.xlsx`](qua-tang/So_doanh_thu_HKD_S1a_S2a.xlsx) | Sổ doanh thu S1a-HKD, S2a-HKD có tổng hợp theo tháng, quý, mốc 1 tỷ và 3 tỷ |
-| [`van-ban/`](van-ban/) | Văn bản pháp luật gốc để tải lên NotebookLM làm nguồn |
+| [`van-ban/`](van-ban/) | Văn bản pháp luật gốc (bản chữ) để đối chiếu hoặc nạp vào Claude/ChatGPT Project |
 
 Trên điện thoại: bấm vào tên file → nút **Download** (biểu tượng tải xuống) góc phải.
 
@@ -66,11 +66,11 @@ mkdir -p ~/.claude/skills && cp -r skill-ho-kinh-doanh/skills/* ~/.claude/skills
 
 ### ChatGPT
 
-Mỗi skill có một file hướng dẫn trong [`chatgpt/`](chatgpt/): tạo Custom GPT (hoặc Project), dán phần **Instructions**, tải các file `references/` lên mục **Knowledge**.
+Mỗi skill có một file hướng dẫn trong [`chatgpt/`](chatgpt/). Bản miễn phí: tạo **Project**, dán phần **Instructions** vào hướng dẫn của Project, tải các file `references/` lên. Bản trả phí có thể tạo Custom GPT tương tự.
 
-### NotebookLM (trợ lý thuế có trích dẫn)
+### Tra cứu nguyên văn văn bản (Claude/ChatGPT Project)
 
-Làm theo [`skills/hoi-dap-thue-hkd/references/huong-dan-notebooklm.md`](skills/hoi-dap-thue-hkd/references/huong-dan-notebooklm.md): tạo notebook, tải các file trong [`van-ban/`](van-ban/) lên làm nguồn.
+Làm theo [`skills/hoi-dap-thue-hkd/references/huong-dan-nap-van-ban.md`](skills/hoi-dap-thue-hkd/references/huong-dan-nap-van-ban.md): tạo Project, tải các file trong [`van-ban/`](van-ban/) lên làm tài liệu.
 
 ## Văn bản pháp luật dùng trong bộ skill
 

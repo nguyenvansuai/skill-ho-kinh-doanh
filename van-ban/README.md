@@ -2,7 +2,7 @@
 
 Toàn văn lấy ngày **30/10/2026** từ [Cơ sở dữ liệu quốc gia về pháp luật](https://vbpl.vn) (Bộ Tư pháp). Mỗi file ghi đường dẫn nguồn ở đầu.
 
-**Dùng với NotebookLM:** tải các file này lên làm nguồn (xem `skills/hoi-dap-thue-hkd/references/huong-dan-notebooklm.md`). File `.md` là chữ thuần nên AI đọc chính xác, trích dẫn được.
+**Dùng với Claude/ChatGPT:** tải các file này vào Project làm tài liệu (xem `skills/hoi-dap-thue-hkd/references/huong-dan-nap-van-ban.md`), hoặc mở ra để đối chiếu điều khoản AI dẫn. File `.md` là chữ thuần nên AI đọc chính xác.
 
 | File | Văn bản | Nội dung chính |
 |---|---|---|

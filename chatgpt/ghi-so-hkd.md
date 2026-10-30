@@ -3,10 +3,10 @@
 **Mô tả:** Ghi sổ doanh thu cho hộ kinh doanh Việt Nam từ ảnh chụp sổ tay, hóa đơn bán hàng, tin nhắn chốt đơn hoặc ghi chép — chuyển thành sổ S1a-HKD (doanh thu từ 1 tỷ trở xuống) hoặc S2a-HKD (trên 1 tỷ, theo nhóm ngành) theo Thông tư 152/2025/TT-BTC, đánh dấu [?] chỗ chữ mờ, cộng theo tháng/quý, xuất file Excel có công thức. Dùng khi người dùng nói "ghi sổ", "chụp sổ bán hàng", "làm sổ doanh thu", "sổ S1a", "sổ S2a", "chuyển sổ tay sang Excel", "sổ sách hộ kinh doanh".
 
 ## Cách cài
-1. ChatGPT → Explore GPTs → Create → tab Configure (hoặc tạo Project và mở Project instructions).
+1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `ghi-so-hkd`. Description: copy dòng Mô tả ở trên.
-3. Dán toàn bộ khối **Instructions** bên dưới vào ô Instructions.
-4. Knowledge: tải lên các file `skills/ghi-so-hkd/references/nguyen-tac-chung.md`, `skills/ghi-so-hkd/references/quy-dinh-thue-hkd-2026.md`.
+3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/ghi-so-hkd/references/nguyen-tac-chung.md`, `skills/ghi-so-hkd/references/quy-dinh-thue-hkd-2026.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/ghi-so-hkd/scripts/tao_so_doanh_thu.py` vào Knowledge.
 
 ## Instructions
