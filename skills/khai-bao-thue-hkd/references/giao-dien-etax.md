@@ -2,6 +2,7 @@
 
 > **Kiểm tra lần cuối: 30/10/2026.** Tổng hợp từ bài hướng dẫn có ảnh chụp màn hình: Sapo (01/CNKD – 13/10/2026; 01/TKN-CNKD – 29/09/2026; 01/BK-STK – 14/10/2026). Giao diện thay đổi thường xuyên: luôn làm Bước 2 của SKILL.md trước. Tên nút trong ngoặc kép là tên hiển thị tại thời điểm kiểm tra.
 > Kênh nộp: app **eTax Mobile** (Tổng cục Thuế) hoặc web **Cổng dịch vụ công thuế** `https://dichvucong.gdt.gov.vn` (đăng nhập bằng tài khoản định danh điện tử VNeID). Người dùng tự đăng nhập, tự nhập OTP.
+> Hộ kinh doanh **bắt buộc nộp hồ sơ điện tử**. Người cao tuổi, người khuyết tật, người thuộc diện bảo trợ xã hội, người ở địa bàn đặc biệt khó khăn hoặc gặp bất khả kháng được nộp trực tiếp hoặc qua bưu chính tại Trung tâm Phục vụ hành chính công cấp xã (NĐ 68/2026 Đ.8 k.4 điểm a).
 
 ## A. Thông báo doanh thu – 01/TKN-CNKD (từ 1 tỷ trở xuống)
 
