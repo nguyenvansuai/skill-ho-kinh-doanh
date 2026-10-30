@@ -1,7 +1,7 @@
 # Quy định thuế hộ kinh doanh 2026 – tóm tắt có nguồn
 
 > Tổng hợp đến **30/10/2026**. Định hướng, không thay tư vấn thuế. Quy định thay đổi nhanh: luôn kiểm tra văn bản hiện hành trên vbpl.vn.
-> Mục 2 (mốc doanh thu, thuế TNCN) đã đối chiếu **nguyên văn** Văn bản hợp nhất 25/2026/VBHN-BTC và Luật 109/2025/QH15 trên vbpl.vn. Các mục khác tổng hợp từ bài tóm tắt có ghi nguồn. Toàn văn văn bản gốc nằm trong thư mục `van-ban/` của repo.
+> Mục 2 và 3a đã đối chiếu **nguyên văn** VBHN 25/2026/VBHN-BTC, VBHN 24/2026/VBHN-TT-BTC, Luật 109/2025/QH15, Luật 48/2024/QH15 và Thông tư 152/2025 trên vbpl.vn. Các mục khác tổng hợp từ bài tóm tắt có ghi nguồn. Toàn văn văn bản gốc nằm trong thư mục `van-ban/` của repo.
 
 ## 1. Văn bản chính
 
@@ -39,9 +39,16 @@
 | Nội dung số: giải trí, trò chơi điện tử, phim, ảnh, nhạc số, quảng cáo số | 5% |
 | Hoạt động kinh doanh khác | 1% |
 
-Ví dụ minh họa (chỉ thuế TNCN): bán mỹ phẩm, doanh thu 1,2 tỷ/năm → (1,2 tỷ − 1 tỷ) × 0,5% = 1.000.000 đồng. Nhiều ngành hoặc nhiều địa điểm: tổng mức trừ không quá 1 tỷ/năm, được chọn trừ vào ngành có lợi nhất (NĐ 68/2026 Điều 4 khoản 3).
+Ví dụ: bán mỹ phẩm (hàng hóa), doanh thu 1,2 tỷ/năm → TNCN = (1,2 tỷ − 1 tỷ) × 0,5% = 1.000.000 đồng; GTGT = 1,2 tỷ × 1% = 12.000.000 đồng; tổng ước tính ≈ 13.000.000 đồng/năm (gồm cả phần sàn đã khấu trừ, nộp thay). Nhiều ngành hoặc nhiều địa điểm: tổng mức trừ không quá 1 tỷ/năm, được chọn trừ vào ngành có lợi nhất (NĐ 68/2026 Điều 4 khoản 3).
 
-**Thuế GTGT** (hộ trên 1 tỷ): tính trực tiếp = tỷ lệ % × doanh thu, tỷ lệ theo Luật Thuế GTGT 48/2024/QH15 và văn bản hướng dẫn (NĐ 68/2026 Điều 3). Bộ skill **chưa đối chiếu** bảng tỷ lệ GTGT: không tự nêu con số, hướng dẫn người dùng tra luật hoặc hỏi cơ quan thuế.
+**Thuế GTGT** (hộ trên 1 tỷ) = tỷ lệ % × **toàn bộ** doanh thu (Luật 48/2024/QH15 Đ.12 k.2; NĐ 68/2026 Đ.3 k.2):
+
+| Nhóm ngành | Tỷ lệ GTGT |
+|---|---|
+| Phân phối, cung cấp hàng hóa | 1% |
+| Dịch vụ, xây dựng không bao thầu nguyên vật liệu | 5% |
+| Sản xuất, vận tải, dịch vụ gắn với hàng hóa, xây dựng có bao thầu nguyên vật liệu | 3% |
+| Hoạt động kinh doanh khác | 2% |
 
 **Hộ đã nộp thuế quý 1/2026 theo mốc cũ 500 triệu:** số đã nộp được bù trừ hoặc hoàn theo Điều 12 Nghị định 68/2026 (sửa bởi NĐ 141/2026). Khuyên người dùng liên hệ cơ quan thuế quản lý, không tự hủy tờ khai.
 
@@ -52,6 +59,29 @@ Ví dụ minh họa (chỉ thuế TNCN): bán mỹ phẩm, doanh thu 1,2 tỷ/n�
 - **Thương mại điện tử:** sàn có chức năng đặt hàng và thanh toán khấu trừ, khai thay, nộp thay thuế; hộ phải cung cấp đúng mã số thuế hoặc số định danh cho sàn (NĐ 68/2026 Đ.11 k.1, Đ.13 k.8). Bán qua nền tảng không có thanh toán (Facebook, Zalo, website tự bán): hộ tự khai (Đ.11 k.2).
 - **Chi phí được trừ (phương pháp theo thu nhập):** chi phí thực tế phục vụ kinh doanh, có hóa đơn, chứng từ; khoản từ 5 triệu đồng trở lên phải thanh toán không dùng tiền mặt. Không trừ chi phí gia đình, tiền phạt (NĐ 68/2026).
 - **Hóa đơn từ máy tính tiền:** áp dụng cho hộ bán trực tiếp tới người tiêu dùng như bán lẻ, ăn uống, khách sạn, vận tải hành khách, vui chơi giải trí (NĐ 254/2026).
+
+## 3a. Việc phải làm theo mốc doanh thu (dùng để trả lời, đã đối chiếu văn bản gốc)
+
+**A. Doanh thu năm từ 1 tỷ trở xuống** (ví dụ 500 triệu):
+
+1. **Không** nộp thuế GTGT, TNCN (NĐ 68/2026 Đ.3 k.1, Đ.4 k.1).
+2. Thông báo doanh thu thực tế của năm với cơ quan thuế **chậm nhất 31/01 năm sau**, Mẫu 01/TKN-CNKD (NĐ 68/2026 Đ.8 k.1 điểm a; TT 18/2026).
+3. Ghi **sổ S1a-HKD** (TT 152/2025 Đ.4); lưu sổ, chứng từ **tối thiểu 5 năm**, bản giấy hoặc điện tử (TT 152/2025 Đ.3 k.2).
+4. Thông báo cho cơ quan thuế mọi tài khoản ngân hàng, ví điện tử dùng kinh doanh, Mẫu 01/BK-STK (NĐ 68/2026 Đ.13 k.4; TT 18/2026).
+5. Hóa đơn điện tử: không bắt buộc, được tự nguyện đăng ký (NĐ 68/2026 Đ.8 k.5 điểm b).
+6. Theo dõi lũy kế: vượt 1 tỷ trong năm → chuyển sang mục B từ quý vượt mốc.
+
+**B. Doanh thu năm trên 1 tỷ đến 3 tỷ** (ví dụ 1,2 tỷ):
+
+1. Nộp thuế GTGT = tỷ lệ % × doanh thu (Luật 48/2024 Đ.12 k.2) và thuế TNCN = (doanh thu − 1 tỷ) × thuế suất ngành (Luật 109/2025 Đ.7 k.3); được chọn TNCN theo thu nhập × 15%.
+2. Khai, nộp thuế GTGT và TNCN **theo quý**, từ quý phát sinh doanh thu vượt 1 tỷ, Mẫu 01/CNKD; hạn nộp: **ngày cuối tháng đầu của quý sau** (NĐ 68/2026 Đ.8 k.1, k.3; Đ.10).
+3. **Bắt buộc** hóa đơn điện tử có mã của cơ quan thuế hoặc từ máy tính tiền; đăng ký trong **30 ngày** kể từ ngày cuối kỳ tính thuế có doanh thu lũy kế trên 1 tỷ (NĐ 68/2026 Đ.8 k.5).
+4. Ghi **sổ S2a-HKD**, tách theo nhóm ngành có cùng tỷ lệ thuế (TT 152/2025 Đ.5); lưu tối thiểu 5 năm.
+5. Thông báo tài khoản ngân hàng, ví điện tử (Mẫu 01/BK-STK; NĐ 68/2026 Đ.13 k.4).
+6. Bán trên sàn có thanh toán (Shopee, TikTok Shop, Lazada): sàn khấu trừ, khai thay, nộp thay; phải cung cấp đúng mã số thuế hoặc số định danh cho sàn (NĐ 68/2026 Đ.11 k.1, Đ.13 k.8). Doanh thu xét mốc 1 tỷ **gồm cả** phần sàn đã khấu trừ (Đ.8 k.1 điểm b). Cách trừ số thuế sàn đã nộp thay trên tờ khai quý: hỏi cơ quan thuế.
+7. Bán qua Facebook, Zalo, website tự bán (không có thanh toán): tự kê khai, nộp thuế (NĐ 68/2026 Đ.11 k.2).
+
+**C. Trên 3 tỷ:** TNCN theo thu nhập tính thuế × 17% (đến 50 tỷ), quyết toán năm; dùng bộ sổ S2b–S2e-HKD (TT 152/2025 Đ.6). Khuyên dùng kế toán dịch vụ.
 
 ## 4. Sổ kế toán theo Thông tư 152/2025
 
@@ -80,7 +110,7 @@ Nghĩa vụ dùng sổ kế toán, hóa đơn: NĐ 68/2026 Đ.13 k.5.
 
 ## 6. Nguồn tham khảo
 
-Văn bản gốc (toàn văn trong `van-ban/` của repo, lấy từ vbpl.vn ngày 30/10/2026): VBHN 25/2026/VBHN-BTC, NĐ 141/2026, VBHN 24/2026/VBHN-TT-BTC, TT 152/2025, NĐ 254/2026, NĐ 117/2025, Luật 09/2026/QH16, Luật 109/2025/QH15, Luật 108/2025/QH15.
+Văn bản gốc (toàn văn trong `van-ban/` của repo, lấy từ vbpl.vn ngày 30/10/2026): Luật 48/2024/QH15 (GTGT), VBHN 25/2026/VBHN-BTC, NĐ 141/2026, VBHN 24/2026/VBHN-TT-BTC, TT 152/2025, NĐ 254/2026, NĐ 117/2025, Luật 09/2026/QH16, Luật 109/2025/QH15, Luật 108/2025/QH15.
 
 Bài tóm tắt:
 

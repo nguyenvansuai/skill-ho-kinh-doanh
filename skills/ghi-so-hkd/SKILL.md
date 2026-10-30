@@ -15,7 +15,9 @@ description: Ghi sổ doanh thu cho hộ kinh doanh Việt Nam từ ảnh chụp
 | Trên 1 tỷ, nộp thuế theo tỷ lệ % trên doanh thu | S2a-HKD, mỗi dòng gắn nhóm ngành nghề |
 | Trên 3 tỷ, hoặc tính TNCN theo thu nhập | Bộ S2b–S2e-HKD: báo người dùng skill này chưa hỗ trợ, khuyên dùng phần mềm kế toán |
 
-Người dùng chưa nói doanh thu năm → hỏi một câu: "Doanh thu cả năm của anh/chị khoảng dưới hay trên 1 tỷ?" Nếu không trả lời được, mặc định S1a và ghi rõ giả định.
+Người dùng chưa nói doanh thu năm → hỏi một câu: "Doanh thu cả năm của anh/chị khoảng bao nhiêu?" Nếu không trả lời được, mặc định S1a và ghi rõ giả định.
+
+Câu lệnh ngắn là đủ, ví dụ "Ghi sổ giúp tôi, cả năm khoảng 500 triệu" kèm ảnh. Không yêu cầu người dùng gõ lại quy tắc: skill tự áp dụng mục 2–3 dưới đây.
 
 ## 2. Đọc dữ liệu đầu vào
 
@@ -35,6 +37,7 @@ Người dùng chưa nói doanh thu năm → hỏi một câu: "Doanh thu cả n
 1. Bảng Markdown: `Ngày | Diễn giải | Số tiền` (S2a thêm `Số hiệu | Nhóm ngành`).
 2. Tổng theo tháng, lũy kế, trạng thái so với mốc doanh thu.
 3. Bảng **Cần anh/chị kiểm tra**: các ô `[?]`, dòng đã bỏ ra.
+5. Khi đã biết doanh thu năm: thêm mục **Việc anh/chị cần làm** lấy đúng danh sách A hoặc B ở mục 3a của `references/quy-dinh-thue-hkd-2026.md`, giữ nguyên căn cứ (văn bản, điều, khoản). Không thêm việc ngoài danh sách.
 4. Người dùng cần file Excel: lưu dữ liệu đã xác nhận ra CSV (cột `ngay,dien_giai,so_tien` cho S1a; thêm `so_hieu,nhom_nganh` cho S2a), rồi chạy:
 
 ```bash

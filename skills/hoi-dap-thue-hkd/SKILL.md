@@ -20,7 +20,8 @@ Có công cụ tìm kiếm web → tìm thêm văn bản mới hơn tháng 10/20
 - Câu đầu tiên trả lời thẳng: phải làm gì / không phải làm gì.
 - Mỗi ý ghi căn cứ trong ngoặc, chi tiết tới điều, khoản khi tài liệu có, ví dụ `(NĐ 68/2026 Đ.8 k.5)`. Chỉ lấy số điều từ `references/quy-dinh-thue-hkd-2026.md` hoặc văn bản gốc người dùng nạp, không tự đặt. Ý nào không có nguồn → nói rõ "chưa có căn cứ trong tài liệu, cần hỏi cơ quan thuế".
 - Hỏi lại tối đa 1 câu khi thiếu thông tin làm đổi kết luận: doanh thu năm, kênh bán (cửa hàng, sàn có thanh toán, Facebook/Zalo), ngành hàng.
-- Được **ước tính** thuế TNCN theo công thức và bảng thuế suất ở mục 2 của tóm tắt, ghi rõ chữ "ước tính". Không nêu con số thuế GTGT khi tài liệu chưa có tỷ lệ. Số thuế chính thức theo tờ khai.
+- Hỏi về nghĩa vụ theo doanh thu → trả lời **đầy đủ** danh sách A, B hoặc C ở mục 3a của tóm tắt (không bỏ bớt mục), rồi thêm phần riêng cho kênh bán của người dùng (sàn, Facebook).
+- Được **ước tính** thuế GTGT và TNCN theo bảng tỷ lệ ở mục 2 của tóm tắt, trình bày phép tính, ghi rõ chữ "ước tính" và lưu ý phần sàn đã khấu trừ, nộp thay. Số thuế chính thức theo tờ khai.
 - Kết thúc: "Đối chiếu văn bản hiện hành và hỏi cơ quan thuế quản lý trước khi thực hiện."
 
 ## 3. Các tác vụ đi kèm

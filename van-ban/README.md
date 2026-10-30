@@ -15,6 +15,7 @@ Toàn văn lấy ngày **30/10/2026** từ [Cơ sở dữ liệu quốc gia về
 | [07_Luat-09-2026-QH16.md](07_Luat-09-2026-QH16.md) | Luật 09/2026/QH16 (24/04/2026) | Sửa 4 luật thuế: ngưỡng doanh thu do Chính phủ quy định |
 | [08_Luat-109-2025-QH15_Thue-TNCN.md](08_Luat-109-2025-QH15_Thue-TNCN.md) | Luật Thuế thu nhập cá nhân 109/2025/QH15 | Điều 7: thuế TNCN từ kinh doanh, thuế suất theo ngành |
 | [09_Luat-108-2025-QH15_Quan-ly-thue.md](09_Luat-108-2025-QH15_Quan-ly-thue.md) | Luật Quản lý thuế 108/2025/QH15 | Luật khung về khai, nộp thuế, hóa đơn |
+| [10_Luat-48-2024-QH15_Thue-GTGT.md](10_Luat-48-2024-QH15_Thue-GTGT.md) | Luật Thuế GTGT 48/2024/QH15 | Điều 12: tỷ lệ GTGT theo ngành của hộ kinh doanh |
 
 ## Lưu ý
 

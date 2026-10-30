@@ -43,4 +43,7 @@ Kết quả: tab Giao dịch (có cột Nhóm, Lý do), Theo quý, Chưa rõ. Ng
 1. Bảng doanh thu theo quý: tiền bán hàng trực tiếp, doanh thu sàn, cộng quý, lũy kế.
 2. Trạng thái so mốc: đã vượt 1 tỷ chưa, từ quý nào; còn bao nhiêu nữa đến mốc kế tiếp.
 3. Danh sách giao dịch **Chưa rõ** và các khoản đã loại (nội bộ, vay) để người dùng kiểm tra.
-4. Câu chốt: "Nghĩa vụ ở từng mốc: đối chiếu quy định hiện hành và hỏi cơ quan thuế quản lý."
+4. **Việc cần làm** theo trạng thái: chưa vượt 1 tỷ → danh sách A; đã vượt hoặc dự báo vượt trong năm → danh sách B, nêu rõ quý bắt đầu khai thuế và hạn đăng ký hóa đơn điện tử (mục 3a của `references/quy-dinh-thue-hkd-2026.md`), giữ nguyên căn cứ.
+5. Câu chốt: "Đối chiếu quy định hiện hành và hỏi cơ quan thuế quản lý trước khi thực hiện."
+
+Người dùng chỉ cần gửi file và nói "đối soát doanh thu năm nay"; skill tự phân loại, cộng, so mốc, dự báo quý vượt mốc theo tốc độ quý gần nhất.
