@@ -27,7 +27,7 @@
     {
       "name": "ghi-so-hkd",
       "source": "./skills/ghi-so-hkd",
-      "description": "Ghi sổ doanh thu cho hộ kinh doanh Việt Nam từ ảnh chụp sổ tay, hóa đơn bán hàng, tin nhắn chốt đơn hoặc ghi chép — chuyển thành sổ S1a-HKD (doanh thu từ 1 tỷ trở xuống) hoặc S2a-HKD (trên 1 tỷ, theo nhóm ngành) theo Thông tư 152/2025/TT-BTC, đánh dấu [?] chỗ chữ mờ, cộng theo tháng/quý, xuất file Excel có công thức. Dùng khi người dùng nói \"ghi sổ\", \"chụp sổ bán hàng\", \"làm sổ doanh thu\", \"sổ S1a\", \"sổ S2a\", \"chuyển sổ tay sang Excel\", \"sổ sách hộ kinh doanh\".",
+      "description": "Ghi sổ doanh thu đủ 3 nguồn cho hộ kinh doanh Việt Nam — tiền mặt (ảnh sổ ghi tay, hóa đơn), sao kê ngân hàng và ví MoMo, báo cáo doanh thu sàn TMĐT — loại tiền nội bộ, tiền vay và tiền sàn chuyển về để không cộng trùng, chuyển thành sổ S1a-HKD (doanh thu từ 1 tỷ trở xuống) hoặc S2a-HKD (trên 1 tỷ, theo nhóm ngành) theo Thông tư 152/2025/TT-BTC, đánh dấu [?] chỗ chữ mờ, cộng theo tháng/quý, xuất file Excel có công thức. Dùng khi người dùng nói \"ghi sổ\", \"chụp sổ bán hàng\", \"làm sổ doanh thu\", \"sổ S1a\", \"sổ S2a\", \"chuyển sổ tay sang Excel\", \"sổ sách hộ kinh doanh\", \"ghi sổ từ sao kê\".",
       "category": "ho-kinh-doanh"
     },
     {
