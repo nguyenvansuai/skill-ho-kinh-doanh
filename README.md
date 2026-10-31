@@ -21,7 +21,7 @@ Trên điện thoại: bấm vào tên file → nút **Download** (biểu tượ
 | # | Skill | Lệnh | Làm gì |
 |---|---|---|---|
 | 01 | Ghi sổ doanh thu | `/ghi-so-hkd` | Ảnh sổ tay, hóa đơn → sổ S1a/S2a-HKD; đánh dấu `[?]` chỗ mờ; xuất Excel có công thức |
-| 02 | Đối soát doanh thu | `/doi-soat-doanh-thu` | Sao kê + báo cáo sàn → tách tiền bán hàng, nội bộ, vay; cộng theo quý; so mốc 1 tỷ, 3 tỷ |
+| 02 | Đối soát doanh thu | `/doi-soat-doanh-thu` | Đối chiếu sổ với sao kê + báo cáo sàn: tìm khoản ghi sót, ghi thừa, lệch sàn; cộng theo quý; so mốc 1 tỷ, 3 tỷ |
 | 03 | Hỏi đáp thuế | `/hoi-dap-thue-hkd` | Trả lời có dẫn nguồn; đọc thông báo thuế; soạn câu hỏi cho cán bộ thuế; checklist theo quý |
 | 04 | Kiểm tra hóa đơn | `/kiem-tra-hoa-don` | Kiểm tra trước khi xuất hóa đơn; bảng chi phí từ hóa đơn mua vào; ngưỡng hóa đơn điện tử |
 | 05 | Khai báo thuế | `/khai-bao-thue-hkd` | Đúng trường hợp → mẫu, hạn nộp, ô cần điền; các bước trên eTax Mobile và Cổng dịch vụ công, **kiểm tra lại giao diện mới nhất** trước khi hướng dẫn |
@@ -107,6 +107,7 @@ Tóm tắt có nguồn: [`shared/quy-dinh-thue-hkd-2026.md`](shared/quy-dinh-thu
 |---|---|
 | `skills/ghi-so-hkd/scripts/tao_so_doanh_thu.py` | Tạo file Excel sổ S1a/S2a-HKD + tab Tổng hợp; nạp dữ liệu từ CSV |
 | `skills/doi-soat-doanh-thu/scripts/doi_soat.py` | Phân loại giao dịch sao kê, cộng doanh thu theo quý, so mốc, tránh cộng trùng tiền sàn |
+| `skills/doi-soat-doanh-thu/scripts/doi_chieu_so.py` | Đối chiếu sổ doanh thu với sao kê, báo cáo sàn: tìm khoản sổ ghi sót, ghi thừa, lệch sàn |
 | `skills/tinh-thue-hkd/scripts/tinh_thue.py` | Ước tính GTGT, TNCN theo ngành/quý; so 2 cách tính TNCN |
 | `skills/lich-thue-hkd/scripts/tao_lich_thue.py` | Lịch hạn nộp + file .ics |
 | `skills/cho-thue-nha/scripts/tinh_thue_cho_thue.py` | Thuế cho thuê BĐS theo hợp đồng, 2 lần khai |

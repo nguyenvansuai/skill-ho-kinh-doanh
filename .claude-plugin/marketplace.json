@@ -21,7 +21,7 @@
     {
       "name": "doi-soat-doanh-thu",
       "source": "./skills/doi-soat-doanh-thu",
-      "description": "Đối soát doanh thu hộ kinh doanh từ sao kê ngân hàng, ví điện tử và báo cáo doanh thu sàn (Shopee, TikTok Shop, Lazada) — phân loại tiền bán hàng, chuyển nội bộ, vay/trả nợ, chưa rõ; tránh cộng trùng tiền sàn; cộng theo quý, lũy kế và so mốc 1 tỷ, 3 tỷ. Dùng khi người dùng nói \"đối soát\", \"sao kê\", \"cộng doanh thu theo quý\", \"tôi đang ở mốc nào\", \"doanh thu đã vượt 1 tỷ chưa\", \"kiểm tra tiền vào tài khoản\".",
+      "description": "Đối soát sổ doanh thu hộ kinh doanh với sao kê ngân hàng, ví MoMo và báo cáo doanh thu sàn (Shopee, TikTok Shop, Lazada) — tìm tiền vào tài khoản mà sổ chưa ghi, khoản sổ ghi chuyển khoản mà sao kê không có, doanh thu sàn trên sổ lệch báo cáo sàn; loại tiền nội bộ, tiền vay, tiền sàn chuyển về; cộng theo quý, lũy kế, so mốc 1 tỷ, 3 tỷ và báo trước quý sẽ vượt. Chưa có sổ thì dựng doanh thu từ sao kê. Dùng khi người dùng nói \"đối soát\", \"đối soát sổ quý này\", \"sổ có khớp sao kê không\", \"sao kê\", \"cộng doanh thu theo quý\", \"doanh thu đã vượt 1 tỷ chưa\".",
       "category": "ho-kinh-doanh"
     },
     {
