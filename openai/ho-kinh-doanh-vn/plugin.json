@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ho-kinh-doanh-vn",
+  "version": "1.0.0",
+  "description": "12 skill sổ sách, thuế, hóa đơn cho hộ kinh doanh Việt Nam 2026.",
+  "author": {
+    "name": "nguyenvansuai",
+    "url": "https://github.com/nguyenvansuai"
+  },
+  "homepage": "https://github.com/nguyenvansuai/skill-ho-kinh-doanh",
+  "repository": "https://github.com/nguyenvansuai/skill-ho-kinh-doanh",
+  "license": "MIT",
+  "keywords": [
+    "ho-kinh-doanh",
+    "thue",
+    "viet-nam"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Hộ kinh doanh VN",
+        "shortDescription": "12 skill sổ sách, thuế, hóa đơn cho hộ kinh doanh Việt Nam 2026.",
+        "longDescription": "Bộ 12 skill cho chủ hộ kinh doanh, cá nhân kinh doanh, người cho thuê nhà năm 2026: ghi sổ S1a/S2a-HKD, đối soát sao kê và báo cáo sàn, mốc 1 tỷ đồng, tính thuế và so sánh cách tính TNCN, lịch hạn nộp, khai báo trên eTax Mobile, hóa đơn điện tử, đăng ký – tạm ngừng – đóng hộ, thuế cho thuê nhà, xử lý chậm nộp, lương – bảo hiểm nhân viên.",
+        "developerName": "nguyenvansuai",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://github.com/nguyenvansuai/skill-ho-kinh-doanh",
+        "defaultPrompt": [
+          "Ghi sổ doanh thu từ ảnh sổ tay và sao kê ngân hàng tháng này.",
+          "Doanh thu năm khoảng 1,5 tỷ, tôi phải nộp thuế bao nhiêu?",
+          "Lập lịch hạn nộp thuế năm 2027 cho hộ kinh doanh."
+        ],
+        "brandColor": "#6D28D9",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

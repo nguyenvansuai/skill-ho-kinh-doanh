@@ -1,0 +1,20 @@
+{
+  "name": "skill-ho-kinh-doanh",
+  "interface": {
+    "displayName": "Hộ kinh doanh VN"
+  },
+  "plugins": [
+    {
+      "name": "ho-kinh-doanh-vn",
+      "source": {
+        "source": "local",
+        "path": "./openai/ho-kinh-doanh-vn"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

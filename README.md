@@ -72,8 +72,27 @@ git clone https://github.com/nguyenvansuai/skill-ho-kinh-doanh.git
 mkdir -p ~/.claude/skills && cp -r skill-ho-kinh-doanh/skills/* ~/.claude/skills/
 ```
 
-### ChatGPT
+### ChatGPT / Codex – cả bộ plugin (OpenAI)
 
+Gói plugin cho ChatGPT và Codex nằm ở [`openai/ho-kinh-doanh-vn/`](openai/ho-kinh-doanh-vn/), theo cấu trúc portable của OpenAI (`plugin.json`, `skills/`), gồm **12 skill**.
+
+**ChatGPT desktop / Codex** – cài cá nhân, không cần OpenAI duyệt:
+
+```bash
+codex plugin marketplace add nguyenvansuai/skill-ho-kinh-doanh
+```
+
+```bash
+codex plugin add ho-kinh-doanh-vn@skill-ho-kinh-doanh
+```
+
+Hoặc trong ứng dụng ChatGPT desktop: **Plugins** → chọn nguồn **Hộ kinh doanh VN** → **Install**. Khi dùng: mở chat chế độ **Work**, gõ `@` và chọn plugin.
+
+**ChatGPT web / chia sẻ rộng**: muốn plugin xuất hiện trong thư mục plugin chung của ChatGPT phải gửi OpenAI duyệt qua [cổng nộp plugin](https://platform.openai.com/plugins) (cần xác minh danh tính). File nén sẵn để nộp: [`dist/ho-kinh-doanh-vn-chatgpt.zip`](dist/). Quản trị viên workspace ChatGPT có thể **Publish** plugin cá nhân cho cả workspace.
+
+Sau khi sửa skill, sinh lại gói: `python3 scripts/build_openai.py`.
+
+### ChatGPT – từng skill (Project / Custom GPT)
 Mỗi skill có một file hướng dẫn trong [`chatgpt/`](chatgpt/). Bản miễn phí: tạo **Project**, dán phần **Instructions** vào hướng dẫn của Project, tải các file `references/` lên. Bản trả phí có thể tạo Custom GPT tương tự.
 
 ### Tra cứu nguyên văn văn bản (Claude/ChatGPT Project)

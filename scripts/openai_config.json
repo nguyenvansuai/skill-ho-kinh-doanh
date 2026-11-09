@@ -1,0 +1,30 @@
+{
+  "plugin_name": "ho-kinh-doanh-vn",
+  "display_name": "Hộ kinh doanh VN",
+  "short_description": "12 skill sổ sách, thuế, hóa đơn cho hộ kinh doanh Việt Nam 2026.",
+  "long_description": "Bộ 12 skill cho chủ hộ kinh doanh, cá nhân kinh doanh, người cho thuê nhà năm 2026: ghi sổ S1a/S2a-HKD, đối soát sao kê và báo cáo sàn, mốc 1 tỷ đồng, tính thuế và so sánh cách tính TNCN, lịch hạn nộp, khai báo trên eTax Mobile, hóa đơn điện tử, đăng ký – tạm ngừng – đóng hộ, thuế cho thuê nhà, xử lý chậm nộp, lương – bảo hiểm nhân viên.",
+  "default_prompts": [
+    "Ghi sổ doanh thu từ ảnh sổ tay và sao kê ngân hàng tháng này.",
+    "Doanh thu năm khoảng 1,5 tỷ, tôi phải nộp thuế bao nhiêu?",
+    "Lập lịch hạn nộp thuế năm 2027 cho hộ kinh doanh."
+  ],
+  "brand_color": "#6D28D9",
+  "keywords": [
+    "ho-kinh-doanh",
+    "thue",
+    "viet-nam"
+  ],
+  "icon": ".claude-plugin/icon.png",
+  "thay_the": [
+    [
+      "(Claude Code)",
+      "(khi chạy trong môi trường có thư mục làm việc, ví dụ Codex)"
+    ],
+    [
+      "Claude Code: lưu thành",
+      "Môi trường có thư mục làm việc (Codex, ChatGPT desktop): lưu thành"
+    ]
+  ],
+  "repository": "https://github.com/nguyenvansuai/skill-ho-kinh-doanh",
+  "category": "Productivity"
+}
