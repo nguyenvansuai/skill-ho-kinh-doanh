@@ -45,3 +45,14 @@ Script tự: so mốc 1 tỷ, 3 tỷ, 50 tỷ; trừ 1 tỷ vào ngành thuế s
 3. Doanh thu 1–3 tỷ: so 2 cách, cách nào thấp hơn, **chi phí hòa vốn**, và điều kiện đi kèm khi chọn Cách 2 (sổ sách, hóa đơn chi phí, giữ 2 năm). Không khuyên Cách 2 nếu người dùng không có đủ hóa đơn chi phí.
 4. Việc cần làm tiếp: mẫu, hạn nộp (skill `khai-bao-thue-hkd`, `lich-thue-hkd`).
 5. Câu chốt: "Đây là ước tính; số chính thức do eTax tính trên tờ khai. Đối chiếu quy định hiện hành và hỏi cơ quan thuế quản lý."
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Đọc sổ doanh thu, bảng chi phí trên Drive để tính thuế theo quý và cả năm thay vì hỏi lại số liệu.
+2. Lưu bảng tính thuế vào Drive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

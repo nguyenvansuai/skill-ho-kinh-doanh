@@ -6,7 +6,7 @@
 1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `xu-ly-cham-nop-phat`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/xu-ly-cham-nop-phat/references/che-tai.md`, `skills/xu-ly-cham-nop-phat/references/nguyen-tac-chung.md`, `skills/xu-ly-cham-nop-phat/references/quy-dinh-thue-hkd-2026.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/xu-ly-cham-nop-phat/references/che-tai.md`, `skills/xu-ly-cham-nop-phat/references/ket-noi.md`, `skills/xu-ly-cham-nop-phat/references/nguyen-tac-chung.md`, `skills/xu-ly-cham-nop-phat/references/quy-dinh-thue-hkd-2026.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/xu-ly-cham-nop-phat/scripts/tinh_cham_nop.py` vào Knowledge.
 
 ## Instructions
@@ -59,4 +59,15 @@ python3 tinh_cham_nop.py ho-so --han 2026-07-31 --ngay-nop 2026-11-05 --co-thue 
 5. Câu chốt: "Đối chiếu quy định hiện hành và hỏi cơ quan thuế quản lý; vụ việc phức tạp nên hỏi đại lý thuế hoặc luật sư."
 
 Không được: khuyên che giấu doanh thu, sửa sổ sách lùi ngày, hủy hóa đơn để né thuế.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Gmail** · **Google Drive** · **Google Calendar**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Tìm thông báo của cơ quan thuế (tiền chậm nộp, quyết định xử phạt) trong email hoặc Drive để tính lại đúng số ngày.
+2. Tạo nhắc hạn nộp tiền phạt, hạn giải trình trên lịch; lưu bảng tính vào Drive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

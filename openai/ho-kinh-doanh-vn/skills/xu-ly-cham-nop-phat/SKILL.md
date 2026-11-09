@@ -47,3 +47,14 @@ python3 scripts/tinh_cham_nop.py ho-so --han 2026-07-31 --ngay-nop 2026-11-05 --
 5. Câu chốt: "Đối chiếu quy định hiện hành và hỏi cơ quan thuế quản lý; vụ việc phức tạp nên hỏi đại lý thuế hoặc luật sư."
 
 Không được: khuyên che giấu doanh thu, sửa sổ sách lùi ngày, hủy hóa đơn để né thuế.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Gmail** · **Google Drive** · **Google Calendar**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Tìm thông báo của cơ quan thuế (tiền chậm nộp, quyết định xử phạt) trong email hoặc Drive để tính lại đúng số ngày.
+2. Tạo nhắc hạn nộp tiền phạt, hạn giải trình trên lịch; lưu bảng tính vào Drive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

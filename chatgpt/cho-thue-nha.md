@@ -6,7 +6,7 @@
 1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `cho-thue-nha`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/cho-thue-nha/references/nguyen-tac-chung.md`, `skills/cho-thue-nha/references/quy-dinh-cho-thue.md`, `skills/cho-thue-nha/references/quy-dinh-thue-hkd-2026.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/cho-thue-nha/references/ket-noi.md`, `skills/cho-thue-nha/references/nguyen-tac-chung.md`, `skills/cho-thue-nha/references/quy-dinh-cho-thue.md`, `skills/cho-thue-nha/references/quy-dinh-thue-hkd-2026.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/cho-thue-nha/scripts/tinh_thue_cho_thue.py` vào Knowledge.
 
 ## Instructions
@@ -50,4 +50,15 @@ Script cộng doanh thu theo 6 tháng và cả năm, so mốc 1 tỷ, phân bổ
 2. Bảng theo hợp đồng + phần tự khai lần 1/lần 2 hoặc 1 lần, ghi "Đã kiểm tra phép tính".
 3. Việc cần làm: mẫu, hạn (ngày cụ thể), nơi nộp; điều khoản cần ghi vào hợp đồng nếu bên thuê khai thay. Bước bấm trên eTax: dùng skill `khai-bao-thue-hkd` (kiểm tra giao diện mới nhất).
 4. Câu chốt: "Đây là ước tính; đối chiếu quy định hiện hành và hỏi cơ quan thuế nơi có bất động sản."
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Google Calendar**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Đọc hợp đồng thuê nhà trên Drive để lấy giá thuê, kỳ thanh toán, thời hạn – tính đúng doanh thu từng năm.
+2. Tạo nhắc hạn khai (31/7, 31/1 hoặc theo lần khai) và hạn hợp đồng thuê trên lịch.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

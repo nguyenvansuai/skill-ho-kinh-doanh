@@ -6,7 +6,7 @@
 1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `doi-soat-doanh-thu`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/doi-soat-doanh-thu/references/nguyen-tac-chung.md`, `skills/doi-soat-doanh-thu/references/quy-dinh-thue-hkd-2026.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/doi-soat-doanh-thu/references/ket-noi.md`, `skills/doi-soat-doanh-thu/references/nguyen-tac-chung.md`, `skills/doi-soat-doanh-thu/references/quy-dinh-thue-hkd-2026.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/doi-soat-doanh-thu/scripts/doi_chieu_so.py`, `skills/doi-soat-doanh-thu/scripts/doi_soat.py` vào Knowledge.
 
 ## Instructions
@@ -70,4 +70,15 @@ Phân loại: tiền bán hàng · tiền sàn chuyển về · chuyển nội b
 5. Câu chốt: "Đối chiếu quy định hiện hành và hỏi cơ quan thuế quản lý trước khi thực hiện."
 
 Người dùng chỉ cần gửi file và nói "đối soát sổ quý 3 giúp tôi"; skill tự chọn cách, khớp, liệt kê chỗ lệch, hỏi lại, rồi cộng và so mốc.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Gmail** · **Google Drive**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Lấy sao kê ngân hàng, ví MoMo, báo cáo thanh toán của sàn trong email hoặc Drive đúng kỳ cần đối soát.
+2. Lưu bảng đối soát và danh sách khoản chưa khớp vào Drive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

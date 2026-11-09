@@ -1,0 +1,19 @@
+{
+  "name": "tron-bo-skill-hkd",
+  "version": "1.0.0",
+  "description": "Bộ 12 skill cho hộ kinh doanh, cá nhân kinh doanh Việt Nam 2026: ghi sổ, đối soát, tính thuế, khai báo eTax, lịch thuế, hóa đơn điện tử, đăng ký hộ, cho thuê nhà, chậm nộp – phạt, nhân viên. Khai báo sẵn connector Gmail, Google Drive, Google Calendar.",
+  "author": {
+    "name": "nguyenvansuai",
+    "url": "https://github.com/nguyenvansuai"
+  },
+  "homepage": "https://github.com/nguyenvansuai/skill-ho-kinh-doanh",
+  "repository": "https://github.com/nguyenvansuai/skill-ho-kinh-doanh",
+  "license": "MIT",
+  "keywords": [
+    "ho-kinh-doanh",
+    "thue",
+    "hoa-don",
+    "viet-nam"
+  ],
+  "privacyPolicyUrl": "https://github.com/nguyenvansuai/skill-ho-kinh-doanh/blob/main/PRIVACY.md"
+}

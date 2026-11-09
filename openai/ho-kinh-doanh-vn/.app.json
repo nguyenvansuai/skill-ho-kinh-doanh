@@ -1,0 +1,13 @@
+{
+  "apps": {
+    "gmail": {
+      "id": "connector_2128aebfecb84f64a069897515042a44"
+    },
+    "google-drive": {
+      "id": "connector_5f3c8c41a1e54ad7a76272c89e2554fa"
+    },
+    "google-calendar": {
+      "id": "connector_947e0d954944416db111db556030eea6"
+    }
+  }
+}

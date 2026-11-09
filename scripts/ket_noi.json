@@ -1,0 +1,97 @@
+{
+  "connectors": ["gmail", "google-drive", "google-calendar"],
+  "chung": [
+    "**Không tự nộp thuế, không tự khai trên eTax**: skill chỉ chuẩn bị số liệu và hướng dẫn; chủ hộ tự đăng nhập và nộp.",
+    "**Sao kê, ảnh sổ, hóa đơn là dữ liệu riêng của chủ hộ**: chỉ đọc đúng kỳ cần làm; không chia sẻ file ra ngoài."
+  ],
+  "chua_co": [
+    "eTax / eTax Mobile, cổng hóa đơn điện tử của cơ quan thuế, Cổng dịch vụ công, VNeID: không có connector; skill hướng dẫn từng bước để chủ hộ tự làm.",
+    "Shopee, TikTok Shop, Lazada, MoMo, ngân hàng: chưa có connector chính thức; tải báo cáo doanh thu, sao kê (Excel/PDF) rồi đưa vào chat, hoặc lấy từ email sàn, ngân hàng gửi qua Gmail.",
+    "Phần mềm bán hàng (KiotViet, Sapo, MISA eShop...): xuất báo cáo Excel rồi đưa vào chat."
+  ],
+  "skills": {
+    "ghi-so-hkd": {
+      "dung": ["google-drive", "gmail"],
+      "viec": [
+        "Lấy ảnh sổ tay, sao kê, báo cáo sàn trong thư mục tháng/quý trên Drive; hoặc sao kê, báo cáo doanh thu sàn gửi qua email (`from:` ngân hàng hoặc sàn `has:attachment after:`).",
+        "Lưu sổ S1a/S2a (Excel có công thức) vào thư mục sổ sách trên Drive, mỗi năm một file."
+      ]
+    },
+    "doi-soat-doanh-thu": {
+      "dung": ["gmail", "google-drive"],
+      "viec": [
+        "Lấy sao kê ngân hàng, ví MoMo, báo cáo thanh toán của sàn trong email hoặc Drive đúng kỳ cần đối soát.",
+        "Lưu bảng đối soát và danh sách khoản chưa khớp vào Drive."
+      ]
+    },
+    "tinh-thue-hkd": {
+      "dung": ["google-drive"],
+      "viec": [
+        "Đọc sổ doanh thu, bảng chi phí trên Drive để tính thuế theo quý và cả năm thay vì hỏi lại số liệu.",
+        "Lưu bảng tính thuế vào Drive."
+      ]
+    },
+    "khai-bao-thue-hkd": {
+      "dung": ["google-drive", "google-calendar", "gmail"],
+      "viec": [
+        "Lấy số liệu doanh thu theo quý từ sổ trên Drive để điền sẵn các chỉ tiêu tờ khai.",
+        "Tạo nhắc hạn khai, nộp trên lịch (sau khi xác nhận).",
+        "Tìm email thông báo của cơ quan thuế (thông báo nộp thuế, chấp nhận tờ khai) để kiểm tra đã nộp chưa."
+      ]
+    },
+    "lich-thue-hkd": {
+      "dung": ["google-calendar"],
+      "viec": [
+        "Đưa lịch hạn nộp cả năm vào Google Calendar thành sự kiện cả ngày có nhắc trước 5 ngày và 1 ngày (sau khi xác nhận danh sách)."
+      ]
+    },
+    "hoa-don-dien-tu-hkd": {
+      "dung": ["gmail", "google-drive", "google-calendar"],
+      "viec": [
+        "Tìm email của nhà cung cấp hóa đơn điện tử, thông báo của cơ quan thuế về đăng ký sử dụng hóa đơn.",
+        "Tạo nhắc hạn đăng ký, chuyển đổi hóa đơn trên lịch; lưu hướng dẫn, hợp đồng dịch vụ hóa đơn vào Drive."
+      ]
+    },
+    "kiem-tra-hoa-don": {
+      "dung": ["gmail", "google-drive"],
+      "viec": [
+        "Tìm hóa đơn mua vào gửi qua email (`has:attachment filename:xml` hoặc `filename:pdf`) để lập bảng chi phí.",
+        "Lưu bảng chi phí từ hóa đơn vào Drive; tạo nháp email đề nghị người bán xuất lại hóa đơn sai thông tin."
+      ]
+    },
+    "cho-thue-nha": {
+      "dung": ["google-drive", "google-calendar"],
+      "viec": [
+        "Đọc hợp đồng thuê nhà trên Drive để lấy giá thuê, kỳ thanh toán, thời hạn – tính đúng doanh thu từng năm.",
+        "Tạo nhắc hạn khai (31/7, 31/1 hoặc theo lần khai) và hạn hợp đồng thuê trên lịch."
+      ]
+    },
+    "thue-nhan-vien-hkd": {
+      "dung": ["google-drive", "google-calendar"],
+      "viec": [
+        "Đọc bảng chấm công, danh sách nhân viên trên Drive để tính lương thực nhận, thuế TNCN, bảo hiểm.",
+        "Tạo nhắc hạn đóng bảo hiểm, khai thuế TNCN khấu trừ trên lịch; lưu bảng lương vào Drive."
+      ]
+    },
+    "xu-ly-cham-nop-phat": {
+      "dung": ["gmail", "google-drive", "google-calendar"],
+      "viec": [
+        "Tìm thông báo của cơ quan thuế (tiền chậm nộp, quyết định xử phạt) trong email hoặc Drive để tính lại đúng số ngày.",
+        "Tạo nhắc hạn nộp tiền phạt, hạn giải trình trên lịch; lưu bảng tính vào Drive."
+      ]
+    },
+    "dang-ky-ho-kinh-doanh": {
+      "dung": ["google-drive", "google-calendar"],
+      "viec": [
+        "Lưu bộ hồ sơ đăng ký, thay đổi, tạm ngừng vào thư mục trên Drive.",
+        "Tạo nhắc hạn: thông báo địa điểm kinh doanh với thuế trong 10 ngày làm việc, ngày hết tạm ngừng."
+      ]
+    },
+    "hoi-dap-thue-hkd": {
+      "dung": ["gmail"],
+      "viec": [
+        "Câu hỏi về một thông báo cụ thể của cơ quan thuế: tìm và đọc email đó để trả lời đúng trường hợp."
+      ]
+    }
+  }
+}

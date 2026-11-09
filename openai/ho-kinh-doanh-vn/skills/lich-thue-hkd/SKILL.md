@@ -42,3 +42,13 @@ Nhập vào lịch:
 1. Bảng hạn: ngày (đã lùi nếu trùng ngày nghỉ), việc, mẫu, căn cứ. Đánh dấu hạn gần nhất kể từ hôm nay.
 2. File .ics (gửi cho người dùng) + cách nhập.
 3. Câu chốt: "Hạn theo NĐ 68/2026 tại thời điểm lập lịch; đối chiếu quy định hiện hành và thông báo của cơ quan thuế."
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Calendar**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Đưa lịch hạn nộp cả năm vào Google Calendar thành sự kiện cả ngày có nhắc trước 5 ngày và 1 ngày (sau khi xác nhận danh sách).
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

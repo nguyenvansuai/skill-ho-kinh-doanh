@@ -27,3 +27,14 @@ Từ ảnh hóa đơn: lập bảng `Ngày | Người bán | Số hóa đơn | M
 - Bán lẻ, ăn uống, khách sạn, vận tải hành khách, vui chơi giải trí: thuộc nhóm dùng hóa đơn từ máy tính tiền (NĐ 254/2026).
 - Từ 1 tỷ trở xuống: không bắt buộc, được tự nguyện đăng ký.
 - Luôn kèm: "Kiểm tra văn bản hiện hành và hỏi cơ quan thuế quản lý."
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Gmail** · **Google Drive**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Tìm hóa đơn mua vào gửi qua email (`has:attachment filename:xml` hoặc `filename:pdf`) để lập bảng chi phí.
+2. Lưu bảng chi phí từ hóa đơn vào Drive; tạo nháp email đề nghị người bán xuất lại hóa đơn sai thông tin.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

@@ -6,7 +6,7 @@
 1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `hoi-dap-thue-hkd`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/hoi-dap-thue-hkd/references/huong-dan-nap-van-ban.md`, `skills/hoi-dap-thue-hkd/references/nguyen-tac-chung.md`, `skills/hoi-dap-thue-hkd/references/quy-dinh-thue-hkd-2026.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/hoi-dap-thue-hkd/references/huong-dan-nap-van-ban.md`, `skills/hoi-dap-thue-hkd/references/ket-noi.md`, `skills/hoi-dap-thue-hkd/references/nguyen-tac-chung.md`, `skills/hoi-dap-thue-hkd/references/quy-dinh-thue-hkd-2026.md`.
 
 ## Instructions
 
@@ -47,4 +47,14 @@ Có công cụ tìm kiếm web → tìm thêm văn bản mới hơn tháng 10/20
 
 - Mốc 500 triệu đồng là quy định **cũ** (Nghị định 68/2026 trước khi sửa). Từ 01/01/2026 mốc là 1 tỷ theo Nghị định 141/2026. Tài liệu người dùng gửi còn ghi 500 triệu → chỉ ra điểm này.
 - Hộ đã nộp thuế quý 1/2026 theo mốc cũ: hướng dẫn liên hệ cơ quan thuế để bù trừ hoặc hoàn, không tự hủy tờ khai.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Gmail**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Câu hỏi về một thông báo cụ thể của cơ quan thuế: tìm và đọc email đó để trả lời đúng trường hợp.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

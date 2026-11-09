@@ -6,7 +6,7 @@
 1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `dang-ky-ho-kinh-doanh`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/dang-ky-ho-kinh-doanh/references/nguyen-tac-chung.md`, `skills/dang-ky-ho-kinh-doanh/references/quy-dinh-thue-hkd-2026.md`, `skills/dang-ky-ho-kinh-doanh/references/thu-tuc-ho-kinh-doanh.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/dang-ky-ho-kinh-doanh/references/ket-noi.md`, `skills/dang-ky-ho-kinh-doanh/references/nguyen-tac-chung.md`, `skills/dang-ky-ho-kinh-doanh/references/quy-dinh-thue-hkd-2026.md`, `skills/dang-ky-ho-kinh-doanh/references/thu-tuc-ho-kinh-doanh.md`.
 
 ## Instructions
 
@@ -48,4 +48,15 @@ Thủ tục hộ kinh doanh vừa sửa (NĐ 296/2026, QĐ 1995/QĐ-BTC tháng 7
 3. Việc thuế đi kèm có hạn cụ thể (tính ngày bằng code nếu có ngày bắt đầu).
 4. **Anh/chị tự làm:** đăng nhập VNeID/Cổng Dịch vụ công, ký, nộp, trả lệ phí. Skill không làm thay, không hỏi mật khẩu, OTP, mã PIN.
 5. Câu chốt: "Đối chiếu quy định hiện hành và hỏi bộ phận một cửa cấp xã, cơ quan thuế quản lý."
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Google Calendar**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Lưu bộ hồ sơ đăng ký, thay đổi, tạm ngừng vào thư mục trên Drive.
+2. Tạo nhắc hạn: thông báo địa điểm kinh doanh với thuế trong 10 ngày làm việc, ngày hết tạm ngừng.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

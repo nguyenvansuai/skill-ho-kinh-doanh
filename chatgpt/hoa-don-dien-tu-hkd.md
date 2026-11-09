@@ -6,7 +6,7 @@
 1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `hoa-don-dien-tu-hkd`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/hoa-don-dien-tu-hkd/references/nguyen-tac-chung.md`, `skills/hoa-don-dien-tu-hkd/references/quy-dinh-hoa-don.md`, `skills/hoa-don-dien-tu-hkd/references/quy-dinh-thue-hkd-2026.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/hoa-don-dien-tu-hkd/references/ket-noi.md`, `skills/hoa-don-dien-tu-hkd/references/nguyen-tac-chung.md`, `skills/hoa-don-dien-tu-hkd/references/quy-dinh-hoa-don.md`, `skills/hoa-don-dien-tu-hkd/references/quy-dinh-thue-hkd-2026.md`.
 
 ## Instructions
 
@@ -55,4 +55,15 @@ Hỏi sai ở đâu → tra bảng mục 5 của `file Knowledge quy-dinh-hoa-do
 3. Bảng kiểm lập hóa đơn hoặc cách sửa hóa đơn sai.
 4. **Anh/chị tự làm:** đăng nhập, ký số, bấm lập/gửi. Skill không làm thay, không hỏi mật khẩu, OTP.
 5. Câu chốt: "Đối chiếu quy định hiện hành và hỏi cơ quan thuế quản lý hoặc nhà cung cấp hóa đơn."
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Gmail** · **Google Drive** · **Google Calendar**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Tìm email của nhà cung cấp hóa đơn điện tử, thông báo của cơ quan thuế về đăng ký sử dụng hóa đơn.
+2. Tạo nhắc hạn đăng ký, chuyển đổi hóa đơn trên lịch; lưu hướng dẫn, hợp đồng dịch vụ hóa đơn vào Drive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

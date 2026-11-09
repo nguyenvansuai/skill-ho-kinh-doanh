@@ -54,3 +54,15 @@ Giao diện eTax Mobile và Cổng dịch vụ công thuế thay đổi thườn
 - Hỏi, lưu, nhập mật khẩu, OTP, mã PIN VNeID của người dùng.
 - Tự đăng nhập, tự bấm nộp tờ khai, tự thanh toán.
 - Bịa tên nút, mã chỉ tiêu: không chắc → ghi `[cần kiểm tra trên màn hình]`.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Google Calendar** · **Gmail**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Lấy số liệu doanh thu theo quý từ sổ trên Drive để điền sẵn các chỉ tiêu tờ khai.
+2. Tạo nhắc hạn khai, nộp trên lịch (sau khi xác nhận).
+3. Tìm email thông báo của cơ quan thuế (thông báo nộp thuế, chấp nhận tờ khai) để kiểm tra đã nộp chưa.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

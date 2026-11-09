@@ -22,3 +22,7 @@ Bộ 12 skill cho chủ hộ kinh doanh, cá nhân kinh doanh, người cho thu�
 ## Cài đặt
 
 Xem README ở gốc repo, mục **ChatGPT / Codex**.
+
+## Connector khai báo sẵn (`.app.json`)
+
+Khi cài plugin, ChatGPT đề nghị kết nối các ứng dụng: `gmail`, `google-drive`, `google-calendar`. Mỗi người đăng nhập một lần bằng tài khoản của mình. Chưa kết nối thì skill vẫn chạy, chỉ không tự lấy dữ liệu hoặc tạo nháp được.

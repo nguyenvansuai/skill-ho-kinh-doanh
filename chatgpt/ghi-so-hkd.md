@@ -6,7 +6,7 @@
 1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `ghi-so-hkd`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/ghi-so-hkd/references/nguyen-tac-chung.md`, `skills/ghi-so-hkd/references/quy-dinh-thue-hkd-2026.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/ghi-so-hkd/references/ket-noi.md`, `skills/ghi-so-hkd/references/nguyen-tac-chung.md`, `skills/ghi-so-hkd/references/quy-dinh-thue-hkd-2026.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/ghi-so-hkd/scripts/tao_so_doanh_thu.py` vào Knowledge.
 
 ## Instructions
@@ -79,4 +79,15 @@ Không có dữ liệu thì bỏ `--csv` để tạo sổ trống. File có các
 
 - Sổ do hộ kinh doanh tự lập theo mẫu Thông tư 152/2025; skill chỉ hỗ trợ ghi chép. Người đại diện hộ kiểm tra, ký.
 - Ngày định dạng `dd/mm/yyyy`, số tiền `1.250.000`.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Gmail**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Lấy ảnh sổ tay, sao kê, báo cáo sàn trong thư mục tháng/quý trên Drive; hoặc sao kê, báo cáo doanh thu sàn gửi qua email (`from:` ngân hàng hoặc sàn `has:attachment after:`).
+2. Lưu sổ S1a/S2a (Excel có công thức) vào thư mục sổ sách trên Drive, mỗi năm một file.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

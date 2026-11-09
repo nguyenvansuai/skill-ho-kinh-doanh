@@ -131,11 +131,18 @@ def kiem_tra():
 
 
 if __name__ == "__main__":
+    import sys as _sys
+    _sys.path.insert(0, str(GOC / "scripts"))
+    import ket_noi
+    ket_noi.chuan_bi()
     dong_bo()
     canh_bao = sinh_chatgpt()
     sinh_marketplace()
-    loi = kiem_tra()
+    loi = kiem_tra() + ket_noi.kiem_tra()
     dong_goi()
+    ket_noi.hoan_tat()  # mcpServers cho skill lẻ + dist/<plugin>.plugin (sau dong_goi vì dong_goi xóa dist/)
+    import subprocess
+    subprocess.run([_sys.executable, str(GOC / "scripts" / "build_openai.py")], check=True)
     n = len([p for p in SKILLS.iterdir() if p.is_dir()])
     print(f"Đã build {n} skill.")
     for c in canh_bao:

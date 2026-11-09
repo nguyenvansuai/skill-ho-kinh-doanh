@@ -44,3 +44,14 @@ Hỏi sai ở đâu → tra bảng mục 5 của `references/quy-dinh-hoa-don.md
 3. Bảng kiểm lập hóa đơn hoặc cách sửa hóa đơn sai.
 4. **Anh/chị tự làm:** đăng nhập, ký số, bấm lập/gửi. Skill không làm thay, không hỏi mật khẩu, OTP.
 5. Câu chốt: "Đối chiếu quy định hiện hành và hỏi cơ quan thuế quản lý hoặc nhà cung cấp hóa đơn."
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Gmail** · **Google Drive** · **Google Calendar**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Tìm email của nhà cung cấp hóa đơn điện tử, thông báo của cơ quan thuế về đăng ký sử dụng hóa đơn.
+2. Tạo nhắc hạn đăng ký, chuyển đổi hóa đơn trên lịch; lưu hướng dẫn, hợp đồng dịch vụ hóa đơn vào Drive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

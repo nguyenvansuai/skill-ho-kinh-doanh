@@ -33,9 +33,22 @@ Trên điện thoại: bấm vào tên file → nút **Download** (biểu tượ
 | 11 | Chậm nộp, phạt | `/xu-ly-cham-nop-phat` | Tiền chậm nộp 0,03%/ngày, khung phạt trễ tờ khai, mốc 90 ngày, khai bổ sung, bất khả kháng, soạn giải trình |
 | 12 | Nhân viên | `/thue-nhan-vien-hkd` | Lương thực nhận, thuế TNCN, bảo hiểm phần nhân viên và hộ, lương tối thiểu vùng, bảng lương, khung hợp đồng |
 
+## Connector
+
+<!-- KET-NOI-README:BAT-DAU (sinh tự động bởi scripts/ket_noi.py) -->
+Plugin **khai báo sẵn** connector: Gmail, Google Drive, Google Calendar. Cài plugin xong chỉ cần bấm kết nối và đăng nhập một lần (tab **Connectors** của plugin). Mỗi skill ghi rõ dùng connector vào việc gì; chưa kết nối thì skill vẫn chạy, chỉ không tự lấy dữ liệu hoặc tạo nháp được. Email chỉ tạo bản nháp, mọi thao tác ghi phải được bạn xác nhận. Chi tiết: [CONNECTORS.md](CONNECTORS.md).
+<!-- KET-NOI-README:KET-THUC -->
+
+Ví dụ việc skill làm qua connector: lấy sao kê, báo cáo doanh thu sàn, hóa đơn trong email hoặc Drive để ghi sổ, đối soát; lưu sổ S1a/S2a vào Drive; đưa hạn nộp thuế cả năm vào Google Calendar.
+
 ## Cài đặt
 
+### Claude Desktop / Cowork – cả bộ plugin (có connector)
+Tải [`dist/tron-bo-skill-hkd.plugin`](dist/) và cài plugin từ file (gồm toàn bộ skill và connector khai báo sẵn), rồi mở tab **Connectors** của plugin để kết nối. Khác với `tat-ca-skill.zip` (chỉ là các skill rời, không có connector).
+
 ### Claude.ai (web / app) – dễ nhất
+> Skill tải lên từng file zip không tự khai báo connector: bật Gmail, Google Drive, Google Calendar (và các dịch vụ khác ở mục Connector) trong **Settings → Connectors** để skill tự lấy dữ liệu, tạo nháp được.
+
 
 1. Bật **Settings → Capabilities → Code execution and file creation**.
 2. Vào **Settings → Capabilities → Skills → Upload skill**.

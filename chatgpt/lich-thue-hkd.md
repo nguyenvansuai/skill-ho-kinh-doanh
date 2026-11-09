@@ -6,7 +6,7 @@
 1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `lich-thue-hkd`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/lich-thue-hkd/references/nguyen-tac-chung.md`, `skills/lich-thue-hkd/references/quy-dinh-thue-hkd-2026.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/lich-thue-hkd/references/ket-noi.md`, `skills/lich-thue-hkd/references/nguyen-tac-chung.md`, `skills/lich-thue-hkd/references/quy-dinh-thue-hkd-2026.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/lich-thue-hkd/scripts/tao_lich_thue.py` vào Knowledge.
 
 ## Instructions
@@ -54,4 +54,14 @@ Nhập vào lịch:
 1. Bảng hạn: ngày (đã lùi nếu trùng ngày nghỉ), việc, mẫu, căn cứ. Đánh dấu hạn gần nhất kể từ hôm nay.
 2. File .ics (gửi cho người dùng) + cách nhập.
 3. Câu chốt: "Hạn theo NĐ 68/2026 tại thời điểm lập lịch; đối chiếu quy định hiện hành và thông báo của cơ quan thuế."
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Calendar**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Đưa lịch hạn nộp cả năm vào Google Calendar thành sự kiện cả ngày có nhắc trước 5 ngày và 1 ngày (sau khi xác nhận danh sách).
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

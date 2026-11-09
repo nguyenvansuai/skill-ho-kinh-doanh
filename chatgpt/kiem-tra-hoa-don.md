@@ -6,7 +6,7 @@
 1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `kiem-tra-hoa-don`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/kiem-tra-hoa-don/references/nguyen-tac-chung.md`, `skills/kiem-tra-hoa-don/references/quy-dinh-thue-hkd-2026.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/kiem-tra-hoa-don/references/ket-noi.md`, `skills/kiem-tra-hoa-don/references/nguyen-tac-chung.md`, `skills/kiem-tra-hoa-don/references/quy-dinh-thue-hkd-2026.md`.
 
 ## Instructions
 
@@ -38,4 +38,15 @@ Từ ảnh hóa đơn: lập bảng `Ngày | Người bán | Số hóa đơn | M
 - Bán lẻ, ăn uống, khách sạn, vận tải hành khách, vui chơi giải trí: thuộc nhóm dùng hóa đơn từ máy tính tiền (NĐ 254/2026).
 - Từ 1 tỷ trở xuống: không bắt buộc, được tự nguyện đăng ký.
 - Luôn kèm: "Kiểm tra văn bản hiện hành và hỏi cơ quan thuế quản lý."
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Gmail** · **Google Drive**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Tìm hóa đơn mua vào gửi qua email (`has:attachment filename:xml` hoặc `filename:pdf`) để lập bảng chi phí.
+2. Lưu bảng chi phí từ hóa đơn vào Drive; tạo nháp email đề nghị người bán xuất lại hóa đơn sai thông tin.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

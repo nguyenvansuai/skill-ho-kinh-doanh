@@ -6,7 +6,7 @@
 1. ChatGPT bản miễn phí: tạo Project mới và mở phần hướng dẫn (instructions) của Project. Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `thue-nhan-vien-hkd`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/thue-nhan-vien-hkd/references/lao-dong-tncn.md`, `skills/thue-nhan-vien-hkd/references/nguyen-tac-chung.md`, `skills/thue-nhan-vien-hkd/references/quy-dinh-thue-hkd-2026.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/thue-nhan-vien-hkd/references/ket-noi.md`, `skills/thue-nhan-vien-hkd/references/lao-dong-tncn.md`, `skills/thue-nhan-vien-hkd/references/nguyen-tac-chung.md`, `skills/thue-nhan-vien-hkd/references/quy-dinh-thue-hkd-2026.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/thue-nhan-vien-hkd/scripts/tinh_luong.py` vào Knowledge.
 
 ## Instructions
@@ -50,4 +50,15 @@ Nhiều nhân viên → chạy cho từng người, lập **bảng lương** (Ex
 3. Việc hộ phải làm: ký hợp đồng, đăng ký BHXH cho nhân viên, khấu trừ và khai thuế (nếu có), lưu chứng từ. Có thể soạn **khung hợp đồng lao động** đơn giản theo mục 4 của `file Knowledge lao-dong-tncn.md` (để trống chỗ cần người dùng quyết định).
 4. Ghi rõ phần nào **[cần kiểm tra]**.
 5. Câu chốt: "Đối chiếu quy định hiện hành; hỏi cơ quan BHXH và cơ quan thuế quản lý."
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Google Calendar**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Đọc bảng chấm công, danh sách nhân viên trên Drive để tính lương thực nhận, thuế TNCN, bảo hiểm.
+2. Tạo nhắc hạn đóng bảo hiểm, khai thuế TNCN khấu trừ trên lịch; lưu bảng lương vào Drive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````
