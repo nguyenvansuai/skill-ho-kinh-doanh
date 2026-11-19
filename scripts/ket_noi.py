@@ -314,10 +314,31 @@ def chuan_bi():
     ghi_readme()
 
 
+GIOI_HAN_MO_TA = 500  # Claude: "Plugin description must be at most 500 characters"
+
+
+def mo_ta_ngan(s, n=GIOI_HAN_MO_TA - 20):
+    """Rút mô tả skill (dài, dùng để kích hoạt skill) thành mô tả plugin ≤ 500 ký tự: bỏ phần 'Dùng khi...', cắt ở ranh giới câu/từ."""
+    s = re.sub(r"\s+", " ", s or "").strip()
+    s = re.split(r"\s*(?:Dùng khi|Dùng cho câu hỏi|Use when)\b", s)[0].rstrip(" .;,")
+    if len(s) <= n:
+        return s + "."
+    cat = s[:n]
+    for sep in (" — ", "; ", ", ", " "):
+        i = cat.rfind(sep)
+        if i > n * 0.6:
+            return cat[:i].rstrip(" ,;—-") + "…"
+    return cat.rstrip() + "…"
+
+
 def va_marketplace():
     p = GOC / ".claude-plugin" / "marketplace.json"
     data = json.loads(p.read_text(encoding="utf-8"))
+    if len(data.get("description", "")) > GIOI_HAN_MO_TA:
+        data["description"] = mo_ta_ngan(data["description"])
     for muc in data["plugins"]:
+        if len(muc.get("description", "")) > GIOI_HAN_MO_TA:
+            muc["description"] = mo_ta_ngan(muc["description"])
         src = muc.get("source", "")
         m = re.fullmatch(r"\./skills/([\w-]+)", src) if isinstance(src, str) else None
         if not m:
@@ -363,6 +384,11 @@ def apps_chatgpt():
 
 def kiem_tra():
     loi = []
+    pj = GOC / ".claude-plugin" / "plugin.json"
+    if pj.exists():
+        n = len(json.loads(pj.read_text(encoding="utf-8")).get("description", ""))
+        if n > GIOI_HAN_MO_TA:
+            loi.append(f"plugin.json: description dài {n} ký tự (Claude giới hạn {GIOI_HAN_MO_TA}) – rút gọn")
     for c in CH["connectors"]:
         if c not in DANH_MUC:
             loi.append(f"ket_noi.json: connector '{c}' không có trong DANH_MUC")
